@@ -208,6 +208,8 @@ If the `axis` is set to "x" or "y" however, the widget will start operating in m
 
 Sortable widget should be initialized for Grid's [`table element`](../../../api/web/grid#fields-table). In the general case filter property of the widget should select all `tr` elements that are direct children of the table's `tbody` element.
 
+> In case Grid's editing is enabled the developer should use a more specific filter selector that excludes the item which is currently in edit mode. For example `.filter(">tbody >tr:not(.k-grid-edit-row)"`. In this way the Sortable functionality will not interfere with Grid's editing feature.
+
     $("#grid").data("kendoGrid").table.kendoSortable({
         filter: ">tbody >tr", //set the filter
         hint: function(element) { //customize the hint
@@ -244,6 +246,8 @@ For more information check [Sortable's events](../../../api/web/sortable#events)
 >**Important:** Sortable widget reorders HTML DOM elements. It will not update automatically the position of the item in the DataSource. It is responsibility of the developer to update the data.
 
 Sortable widget should be initialized for ListView's element. In the general case filter property of the widget should select all elements that are direct children of the ListView's element.
+
+> In case ListView's editing is enabled the developer should use a more specific filter selector that excludes the item which is currently in edit mode. For example `.filter(">div:not(.k-edit-item)"`. In this way the Sortable functionality will not interfere with ListView's editing feature.
 
 For more information check [Sortable's events](../../../api/web/sortable#events) and ListView integration [demo page](http://demos.telerik.com/kendo-ui/web/sortable/integration-listview.html).
 
