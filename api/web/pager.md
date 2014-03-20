@@ -626,6 +626,7 @@ The tooltip of the refresh button.
 ## Methods
 
 ### totalPages
+
 Returns the number of pages.
 
 #### Example - get the total number of pages
@@ -651,7 +652,12 @@ Returns the number of pages.
         console.log(pager.totalPages()); // displays "2"
     </script>
 
+#### Returns
+
+`Number` The number of pages.
+
 ### pageSize
+
 Returns the page size - maximum number of items allowed on one page.
 
 #### Example - get the page size
@@ -677,8 +683,13 @@ Returns the page size - maximum number of items allowed on one page.
         console.log(pager.pageSize()); // displays "2"
     </script>
 
+#### Returns
+
+`Number` The maximum number of items allowed on one page.
+
 ### page
-Set the specified page as a current page. If called without arguments - returns the current page.
+
+Sets or gets the current page.
 
 #### Example - get current page
     <div id="pager"></div>
@@ -726,7 +737,18 @@ Set the specified page as a current page. If called without arguments - returns 
         pager.page(2);
     </script>
 
+#### Parameters
+
+##### page `Boolean`
+
+The new page number.
+
+#### Returns
+
+`Number` The current page number.
+
 ### refresh
+
 Updates all values of pager elements so that these values fit the values of DataSource. This method is automatically called after DataSource change event is fired.
 
 #### Example - refresh the pager
@@ -753,6 +775,7 @@ Updates all values of pager elements so that these values fit the values of Data
     </script>
 
 ### destroy
+
 Unbinds all callbacks created within pager initialization. This method doesn't remove pager element from DOM.
 
 > This method does not remove the widget element from DOM.
