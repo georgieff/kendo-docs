@@ -107,6 +107,12 @@ Shared components providing behaviors, data access and other services
 1. kendo.data.xml.js (XML feature)
 1. kendo.data.js
 
+### Drag & drop
+1. jquery.js
+1. kendo.core.js
+1. kendo.userevents.js
+1. kendo.draganddrop.js
+
 ### Effects
 1. jquery.js
 1. kendo.core.js
@@ -117,25 +123,41 @@ Shared components providing behaviors, data access and other services
 1. kendo.core.js
 1. kendo.router.js
 
+### Sortable
+1. jquery.js
+1. kendo.core.js
+1. kendo.userevents.js
+1. kendo.draganddrop.js
+1. kendo.sortable.js
+
 ### View
 1. jquery.js
 1. kendo.core.js
 1. kendo.data.js
 1. kendo.binder.js
+1. kendo.fx.js
 1. kendo.view.js
 
 
 ## Web
 
 Desktop UI Widgets for mobile-ready Web Sites and Applications
-
 ### AutoComplete
 1. jquery.js
 1. kendo.core.js
 1. kendo.data.js
 1. kendo.popup.js
 1. kendo.list.js
+1. kendo.fx.js (Mobile scroller feature)
+1. kendo.userevents.js (Mobile scroller feature)
+1. kendo.draganddrop.js (Mobile scroller feature)
+1. kendo.mobile.scroller.js (Mobile scroller feature)
 1. kendo.autocomplete.js
+
+### Button
+1. jquery.js
+1. kendo.core.js
+1. kendo.button.js
 
 ### Calendar
 1. jquery.js
@@ -157,6 +179,10 @@ Desktop UI Widgets for mobile-ready Web Sites and Applications
 1. kendo.data.js
 1. kendo.popup.js
 1. kendo.list.js
+1. kendo.fx.js (Mobile scroller feature)
+1. kendo.userevents.js (Mobile scroller feature)
+1. kendo.draganddrop.js (Mobile scroller feature)
+1. kendo.mobile.scroller.js (Mobile scroller feature)
 1. kendo.combobox.js
 
 ### DatePicker
@@ -181,6 +207,10 @@ Desktop UI Widgets for mobile-ready Web Sites and Applications
 1. kendo.data.js
 1. kendo.popup.js
 1. kendo.list.js
+1. kendo.fx.js (Mobile scroller feature)
+1. kendo.userevents.js (Mobile scroller feature)
+1. kendo.draganddrop.js (Mobile scroller feature)
+1. kendo.mobile.scroller.js (Mobile scroller feature)
 1. kendo.dropdownlist.js
 
 ### Editor
@@ -196,7 +226,6 @@ Desktop UI Widgets for mobile-ready Web Sites and Applications
 1. kendo.window.js
 1. kendo.slider.js
 1. kendo.colorpicker.js
-1. kendo.selectable.js (Image Browser feature)
 1. kendo.listview.js (Image Browser feature)
 1. kendo.upload.js (Image Browser feature)
 1. kendo.imagebrowser.js (Image Browser feature)
@@ -240,13 +269,27 @@ Desktop UI Widgets for mobile-ready Web Sites and Applications
 1. kendo.pager.js (Paging feature)
 1. kendo.userevents.js (Selection feature)
 1. kendo.selectable.js (Selection feature)
-1. kendo.sortable.js (Sorting feature)
 1. kendo.userevents.js (Column reordering feature)
 1. kendo.draganddrop.js (Column reordering feature)
 1. kendo.reorderable.js (Column reordering feature)
 1. kendo.userevents.js (Column resizing feature)
 1. kendo.draganddrop.js (Column resizing feature)
 1. kendo.resizable.js (Column resizing feature)
+1. kendo.popup.js (Grid adaptive rendering feature)
+1. kendo.fx.js (Grid adaptive rendering feature)
+1. kendo.userevents.js (Grid adaptive rendering feature)
+1. kendo.draganddrop.js (Grid adaptive rendering feature)
+1. kendo.mobile.scroller.js (Grid adaptive rendering feature)
+1. kendo.binder.js (Grid adaptive rendering feature)
+1. kendo.view.js (Grid adaptive rendering feature)
+1. kendo.mobile.view.js (Grid adaptive rendering feature)
+1. kendo.mobile.loader.js (Grid adaptive rendering feature)
+1. kendo.mobile.pane.js (Grid adaptive rendering feature)
+1. kendo.router.js (Grid adaptive rendering feature)
+1. kendo.mobile.application.js (Grid adaptive rendering feature)
+1. kendo.mobile.popover.js (Grid adaptive rendering feature)
+1. kendo.mobile.shim.js (Grid adaptive rendering feature)
+1. kendo.mobile.actionsheet.js (Grid adaptive rendering feature)
 1. kendo.grid.js
 
 ### ListView
@@ -265,6 +308,11 @@ Desktop UI Widgets for mobile-ready Web Sites and Applications
 1. kendo.selectable.js (Selection feature)
 1. kendo.listview.js
 
+### MaskedTextBox
+1. jquery.js
+1. kendo.core.js
+1. kendo.maskedtextbox.js
+
 ### Menu
 1. jquery.js
 1. kendo.core.js
@@ -277,7 +325,17 @@ Desktop UI Widgets for mobile-ready Web Sites and Applications
 1. kendo.data.js
 1. kendo.popup.js
 1. kendo.list.js
+1. kendo.fx.js (Mobile scroller feature)
+1. kendo.userevents.js (Mobile scroller feature)
+1. kendo.draganddrop.js (Mobile scroller feature)
+1. kendo.mobile.scroller.js (Mobile scroller feature)
 1. kendo.multiselect.js
+
+### Notification
+1. jquery.js
+1. kendo.core.js
+1. kendo.popup.js
+1. kendo.notification.js
 
 ### NumericTextBox
 1. jquery.js
@@ -289,6 +347,11 @@ Desktop UI Widgets for mobile-ready Web Sites and Applications
 1. jquery.js
 1. kendo.core.js
 1. kendo.panelbar.js
+
+### ProgressBar
+1. jquery.js
+1. kendo.core.js
+1. kendo.progressbar.js
 
 ### Scheduler
 1. jquery.js
@@ -312,6 +375,17 @@ Desktop UI Widgets for mobile-ready Web Sites and Applications
 1. kendo.scheduler.dayview.js (Scheduler Day View feature)
 1. kendo.scheduler.agendaview.js (Scheduler Agenda View feature)
 1. kendo.scheduler.monthview.js (Scheduler Month View feature)
+1. kendo.fx.js (Scheduler adaptive rendering feature)
+1. kendo.mobile.scroller.js (Scheduler adaptive rendering feature)
+1. kendo.view.js (Scheduler adaptive rendering feature)
+1. kendo.mobile.view.js (Scheduler adaptive rendering feature)
+1. kendo.mobile.loader.js (Scheduler adaptive rendering feature)
+1. kendo.mobile.pane.js (Scheduler adaptive rendering feature)
+1. kendo.router.js (Scheduler adaptive rendering feature)
+1. kendo.mobile.application.js (Scheduler adaptive rendering feature)
+1. kendo.mobile.popover.js (Scheduler adaptive rendering feature)
+1. kendo.mobile.shim.js (Scheduler adaptive rendering feature)
+1. kendo.mobile.actionsheet.js (Scheduler adaptive rendering feature)
 1. kendo.scheduler.js
 
 ### Slider
@@ -381,6 +455,7 @@ Data Visualization Widgets for Desktop and Mobile web apps
 1. kendo.core.js
 1. kendo.dataviz.core.js
 1. kendo.dataviz.svg.js
+1. kendo.dataviz.canvas.js
 1. kendo.dataviz.barcode.js
 
 ### Output: Canvas
@@ -396,27 +471,51 @@ Data Visualization Widgets for Desktop and Mobile web apps
 1. kendo.userevents.js
 1. kendo.dataviz.core.js
 1. kendo.dataviz.svg.js
+1. kendo.dataviz.themes.js
 1. kendo.dataviz.chart.js (Polar & Radar feature)
 1. kendo.dataviz.chart.polar.js (Polar & Radar feature)
+1. kendo.dataviz.chart.js (Funnel chart feature)
+1. kendo.dataviz.chart.funnel.js (Funnel chart feature)
 1. kendo.dataviz.chart.js
 
-### Core
+### Diagram
 1. jquery.js
 1. kendo.core.js
+1. kendo.data.js
+1. kendo.userevents.js
+1. kendo.fx.js
+1. kendo.draganddrop.js
+1. kendo.mobile.scroller.js
 1. kendo.dataviz.core.js
+1. kendo.dataviz.diagram.js
 
 ### Gauge
 1. jquery.js
 1. kendo.core.js
 1. kendo.dataviz.core.js
 1. kendo.dataviz.svg.js
+1. kendo.dataviz.themes.js
 1. kendo.dataviz.gauge.js
+
+### Map
+1. jquery.js
+1. kendo.core.js
+1. kendo.data.js
+1. kendo.userevents.js
+1. kendo.popup.js
+1. kendo.tooltip.js
+1. kendo.dataviz.core.js
+1. kendo.fx.js
+1. kendo.draganddrop.js
+1. kendo.mobile.scroller.js
+1. kendo.dataviz.map.js
 
 ### QRCode
 1. jquery.js
 1. kendo.core.js
 1. kendo.dataviz.core.js
 1. kendo.dataviz.svg.js
+1. kendo.dataviz.canvas.js
 1. kendo.dataviz.qrcode.js
 
 ### Sparkline
@@ -426,6 +525,7 @@ Data Visualization Widgets for Desktop and Mobile web apps
 1. kendo.userevents.js
 1. kendo.dataviz.core.js
 1. kendo.dataviz.svg.js
+1. kendo.dataviz.themes.js
 1. kendo.dataviz.chart.js
 1. kendo.dataviz.sparkline.js
 
@@ -436,19 +536,26 @@ Data Visualization Widgets for Desktop and Mobile web apps
 1. kendo.userevents.js
 1. kendo.dataviz.core.js
 1. kendo.dataviz.svg.js
+1. kendo.dataviz.themes.js
 1. kendo.dataviz.chart.js
 1. kendo.dataviz.stockchart.js
 
-### Themes
+### Output: SVG
 1. jquery.js
 1. kendo.core.js
 1. kendo.dataviz.core.js
-1. kendo.dataviz.themes.js
+1. kendo.dataviz.svg.js
+
+### Output: VML
+1. jquery.js
+1. kendo.core.js
+1. kendo.dataviz.core.js
+1. kendo.dataviz.vml.js
+
 
 ## Mobile
 
 Framework and Widgets for Mobile Applications
-
 ### ActionSheet
 1. jquery.js
 1. kendo.core.js
@@ -457,6 +564,9 @@ Framework and Widgets for Mobile Applications
 1. kendo.userevents.js
 1. kendo.draganddrop.js
 1. kendo.mobile.scroller.js
+1. kendo.data.js
+1. kendo.binder.js
+1. kendo.view.js
 1. kendo.mobile.view.js
 1. kendo.mobile.loader.js
 1. kendo.mobile.pane.js
@@ -473,6 +583,9 @@ Framework and Widgets for Mobile Applications
 1. kendo.userevents.js
 1. kendo.draganddrop.js
 1. kendo.mobile.scroller.js
+1. kendo.data.js
+1. kendo.binder.js
+1. kendo.view.js
 1. kendo.mobile.view.js
 1. kendo.mobile.loader.js
 1. kendo.mobile.pane.js
@@ -486,6 +599,9 @@ Framework and Widgets for Mobile Applications
 1. kendo.userevents.js
 1. kendo.draganddrop.js
 1. kendo.mobile.scroller.js
+1. kendo.data.js
+1. kendo.binder.js
+1. kendo.view.js
 1. kendo.mobile.view.js
 1. kendo.mobile.loader.js
 1. kendo.mobile.pane.js
@@ -500,6 +616,9 @@ Framework and Widgets for Mobile Applications
 1. kendo.userevents.js
 1. kendo.draganddrop.js
 1. kendo.mobile.scroller.js
+1. kendo.data.js
+1. kendo.binder.js
+1. kendo.view.js
 1. kendo.mobile.view.js
 1. kendo.mobile.loader.js
 1. kendo.mobile.pane.js
@@ -514,11 +633,10 @@ Framework and Widgets for Mobile Applications
 1. kendo.userevents.js
 1. kendo.draganddrop.js
 1. kendo.mobile.scroller.js
+1. kendo.data.js
+1. kendo.binder.js
+1. kendo.view.js
 1. kendo.mobile.view.js
-1. kendo.mobile.loader.js
-1. kendo.mobile.pane.js
-1. kendo.router.js
-1. kendo.mobile.application.js
 1. kendo.mobile.drawer.js
 
 ### ListView
@@ -529,6 +647,8 @@ Framework and Widgets for Mobile Applications
 1. kendo.userevents.js
 1. kendo.draganddrop.js
 1. kendo.mobile.scroller.js
+1. kendo.binder.js
+1. kendo.view.js
 1. kendo.mobile.view.js
 1. kendo.mobile.loader.js
 1. kendo.mobile.pane.js
@@ -545,6 +665,9 @@ Framework and Widgets for Mobile Applications
 1. kendo.userevents.js
 1. kendo.draganddrop.js
 1. kendo.mobile.scroller.js
+1. kendo.data.js
+1. kendo.binder.js
+1. kendo.view.js
 1. kendo.mobile.view.js
 1. kendo.mobile.loader.js
 1. kendo.mobile.pane.js
@@ -559,6 +682,9 @@ Framework and Widgets for Mobile Applications
 1. kendo.userevents.js
 1. kendo.draganddrop.js
 1. kendo.mobile.scroller.js
+1. kendo.data.js
+1. kendo.binder.js
+1. kendo.view.js
 1. kendo.mobile.view.js
 1. kendo.mobile.loader.js
 1. kendo.mobile.pane.js
@@ -574,6 +700,9 @@ Framework and Widgets for Mobile Applications
 1. kendo.userevents.js
 1. kendo.draganddrop.js
 1. kendo.mobile.scroller.js
+1. kendo.data.js
+1. kendo.binder.js
+1. kendo.view.js
 1. kendo.mobile.view.js
 1. kendo.mobile.loader.js
 1. kendo.mobile.pane.js
@@ -596,6 +725,9 @@ Framework and Widgets for Mobile Applications
 1. kendo.userevents.js
 1. kendo.draganddrop.js
 1. kendo.mobile.scroller.js
+1. kendo.data.js
+1. kendo.binder.js
+1. kendo.view.js
 1. kendo.mobile.view.js
 1. kendo.mobile.loader.js
 1. kendo.mobile.pane.js
@@ -610,6 +742,9 @@ Framework and Widgets for Mobile Applications
 1. kendo.userevents.js
 1. kendo.draganddrop.js
 1. kendo.mobile.scroller.js
+1. kendo.data.js
+1. kendo.binder.js
+1. kendo.view.js
 1. kendo.mobile.view.js
 1. kendo.mobile.loader.js
 1. kendo.mobile.pane.js
@@ -624,6 +759,9 @@ Framework and Widgets for Mobile Applications
 1. kendo.userevents.js
 1. kendo.draganddrop.js
 1. kendo.mobile.scroller.js
+1. kendo.data.js
+1. kendo.binder.js
+1. kendo.view.js
 1. kendo.mobile.view.js
 1. kendo.mobile.loader.js
 1. kendo.mobile.pane.js
@@ -638,6 +776,9 @@ Framework and Widgets for Mobile Applications
 1. kendo.userevents.js
 1. kendo.draganddrop.js
 1. kendo.mobile.scroller.js
+1. kendo.data.js
+1. kendo.binder.js
+1. kendo.view.js
 1. kendo.mobile.view.js
 1. kendo.mobile.loader.js
 1. kendo.mobile.pane.js
@@ -650,3 +791,20 @@ Framework and Widgets for Mobile Applications
 1. kendo.core.js
 1. kendo.userevents.js
 1. kendo.touch.js
+
+
+## Server Wrappers
+
+Supplementary scripts for integration with server-side technologies
+### ASP.NET MVC
+1. jquery.js
+1. kendo.core.js
+1. kendo.data.js
+1. kendo.popup.js
+1. kendo.list.js
+1. kendo.combobox.js
+1. kendo.multiselect.js
+1. kendo.validator.js
+1. kendo.aspnetmvc.js
+
+
