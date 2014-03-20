@@ -1,5 +1,5 @@
 ---
-title: Using mobile widgets outside of a Kendo UI Mobile application container
+title: Using with Kendo UI Web
 meta_title: How to guide on using mobile widgets outside of a Kendo UI Mobile application container
 slug: gs-mobile-regular-usage
 tags: getting-started, mobile
