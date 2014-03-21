@@ -49,7 +49,7 @@ For example:
 > **Important:** in order to use HTTPS, you need to directly access the CloudFront CDN
 
     https://da7xgjtj801h2.cloudfront.net/<version>/js/<filename>.min.js
-    https://da7xgjtj801h2.cloudfront.net/<version>/css/<filename>.min.css
+    https://da7xgjtj801h2.cloudfront.net/<version>/styles/<filename>.min.css
 
 ### CDN Fallback and Troubleshooting
 
