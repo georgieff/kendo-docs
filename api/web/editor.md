@@ -14,6 +14,24 @@ Represents the Kendo UI Editor widget. Inherits from [Widget](/kendo-ui/api/fram
 
 ## Configuration
 
+### domain `String`
+
+Relaxes the same-origin policy when using the iframe-based editor.
+This is done automatically for all cases except when the policy is relaxed by document.domain = document.domain.
+In that case, this property must be used to allow the editor to function properly across browsers.
+This property has been introduced in internal builds after 2014.1.319.
+
+#### Example
+
+    <textarea id="editor"></textarea>
+    <script>
+    document.domain = document.domain;
+
+    $("#editor").kendoEditor({
+      domain: document.domain
+    });
+    </script>
+
 ### encoded `Boolean` *(default: true)*
 
 Indicates whether the Editor should submit encoded HTML tags. By default, the submitted value is encoded.
