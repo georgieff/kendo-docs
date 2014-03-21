@@ -7,7 +7,7 @@ publish: true
 # Icons in Kendo UI Mobile
 
 > **Important:** Current WP8 versions do not support web fonts loaded from a local CSS when used in PhoneGap or HTML5 applications!
-Unfortunately there are no known workarounds yet. Use [images for icons](#custom_icons_in_wp8) when targeting WP8 applications.
+Unfortunately there are no known workarounds yet. Use [images for icons](#custom-icons-in-wp8) when targeting WP8 applications.
 
 Kendo UI Mobile includes 34 integrated font icons, which can be used directly in a Kendo UI Mobile project by specifying a data-icon attribute with one of the following icon names
 (supported by all Button widgets and the ListView items):
