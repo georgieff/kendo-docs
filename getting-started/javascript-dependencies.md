@@ -74,7 +74,7 @@ When using any kind of CDN, it is recommended to implement a local fallback.
         <script>
             if (typeof jQuery == "undefined") {
                 // fallback to local jQuery
-                document.write(unescape('%3Cscript src="/path/to/local/jquery.min.js" type="text/javascript"%3E%3C/script%3E'));
+                document.write(unescape('%3Cscript src="/path/to/local/jquery.min.js" %3E%3C/script%3E'));
             }
         </script>
 
@@ -89,7 +89,7 @@ When using any kind of CDN, it is recommended to implement a local fallback.
                 document.write(unescape('%3Clink rel="stylesheet" href="/path/to/local/kendo.blueopal.min.css" %3C/%3E'));
                 
                 // fallback to local Kendo UI scripts
-                document.write(unescape('%3Cscript src="/path/to/local/kendo.all.min.js" type="text/javascript"%3E%3C/script%3E'));
+                document.write(unescape('%3Cscript src="/path/to/local/kendo.all.min.js" %3E%3C/script%3E'));
                 // also add kendo.aspnetmvc.min.js or kendo.timezones.min.js, if needed
             }
         </script>
