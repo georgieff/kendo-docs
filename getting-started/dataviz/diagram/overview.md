@@ -36,7 +36,7 @@ To add a rectangular shape to the diagram you simply call the addShape() method;
 
 which will render a rectangle in the upper-left corner of the diagram surface. To have a different initial position you would call the addShape() method with an additional Point parameter, for example;
 
-    var Point = kendo.diagram.Point;
+    var Point = kendo.dataviz.diagram.Point;
     diagram.addShape(new Point(100,220));
 
 Additional properties can be specified via the options parameter. For instance, you can set the background color of the shape like so;
@@ -47,6 +47,7 @@ A more complete overview of the options can be found in the API documentation.
 
 The addShape() method also accepts a Shape instance, so you can also add a new shape as follows;
 
+	var Point = kendo.dataviz.diagram.Point;
     var shapeInstance = new kendo.diagram.Shape();
     var shape = diagram.addShape(shape);
     shape.position(new Point(100,220));
@@ -55,46 +56,14 @@ The addShape() method also accepts a Shape instance, so you can also add a new s
 
 Shapes can be connected using the connect() method;
 
+	var Point = kendo.dataviz.diagram.Point;
     var shape1 = diagram.addShape(new Point(100,100));
     var shape2 = diagram.addShape(new Point(300,100));
     var connection = diagram.connect(shape1, shape2);
 
 which results in something like the picture below
 
-![Two shapes connected.](SimplyConnected.PNG)
-
-Note that by default so-called caps are defined on the endpoints of the connection to render a directed connection.
-
-You can alter the caps by means of the options:
-
-    connection.redraw({
-        endCap: "circle"
-    });
-
-![Changing connection caps.](ChangedCaps.PNG)
-
-and additional properties can be changed in a similar fashion:
-
-    var shape1 = diagram.addShape(new Point(100, 100));
-    var shape2 = diagram.addShape(new Point(300, 150));
-    var connection = diagram.connect(shape1, shape2);
-    connection.redraw({
-        endCap: "circle",
-        stroke: {
-            color: "red"
-        },
-        hover: {
-            stroke: {
-                color: "green",
-                width: 3
-            }
-        },
-        content: {
-            text: "text"
-        }
-    });
-
-![Changing connection options.](ConnectionOptions.PNG)
+![Two shapes connected.](connection.png)
 
 ### Layout
 
