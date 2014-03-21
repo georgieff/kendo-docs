@@ -3,8 +3,9 @@ title: Overview
 meta_title: Documentation for the Diagram widget in Kendo UI DataViz
 meta_description: How to create a diagram, add diagram elements, change properties, an overview of the widget's major features.
 slug: gs-dataviz-diagram-overview
+relatedDocs: api-dataviz-diagram
 ordinal: 1
-publish: false
+publish: true
 ---
 
 # Kendo Diagramming Overview
