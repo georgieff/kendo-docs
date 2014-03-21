@@ -118,9 +118,17 @@ The shape rotation settings.
 
 The rotation angle.
 
-### content `String`
+### content `Object`
 
-Sets the text content of the Shape.
+Defines the shapes content settings.
+
+### content.text `String`
+
+The text displayed in the shape.
+
+### content.align `String`
+
+The alignment of the text inside the shape.
 
 ### visual `Function`
 

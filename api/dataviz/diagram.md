@@ -671,9 +671,17 @@ The function that positions the connector.
 
 The rotation angle.
 
-### shapes.content `String`
+### shapes.content `Object`
 
-Sets the text content of the Shape.
+Defines the shapes content settings.
+
+### shapes.content.text `String`
+
+The text displayed in the shape.
+
+### shapes.content.align `String`
+
+The alignment of the text inside the shape.
 
 ### shapes.visual `Function`
 
