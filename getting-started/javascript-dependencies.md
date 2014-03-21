@@ -69,7 +69,9 @@ When using any kind of CDN, it is recommended to implement a local fallback.
     <head>
         <meta charset="utf-8" />
         <title>Page Title</title>
-
+        <link rel="stylesheet" href="http://cdn.kendostatic.com/2014.1.318/styles/kendo.common.min.css" />
+        <link rel="stylesheet" href="http://cdn.kendostatic.com/2014.1.318/styles/kendo.blueopal.min.css" />
+        
         <script src="http://cdn.kendostatic.com/2014.1.318/js/jquery.min.js"></script>
         <script>
             if (typeof jQuery == "undefined") {
