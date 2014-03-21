@@ -36,15 +36,66 @@ to create a single JavaScript file which contains only the required widgets and 
 
 ## CDN
 
-The minified versions of all JavaScript files are also available via CDN
+The Kendo UI CDN is hosted on Amazon CloudFront. The minified versions of all JavaScript files are available via the following URLs:
 
     http://cdn.kendostatic.com/<version>/js/<filename>.min.js
+    http://cdn.kendostatic.com/<version>/styles/<filename>.min.css
 
-**e.g.** `http://cdn.kendostatic.com/2012.2.710/js/kendo.all.min.js`
+For example:
+
+    http://cdn.kendostatic.com/2014.1.318/js/kendo.all.min.js
+    http://cdn.kendostatic.com/2014.1.318/styles/kendo.common.min.css
 
 > **Important:** in order to use HTTPS, you need to directly access the CloudFront CDN
 
     https://da7xgjtj801h2.cloudfront.net/<version>/js/<filename>.min.js
+    https://da7xgjtj801h2.cloudfront.net/<version>/css/<filename>.min.css
+
+### CDN Fallback and Troubleshooting
+
+Although the Amazon cloud service provides a very reliable level of uptime, disruptions or connection problems are theoretically possible.
+You can check the systems' status at [http://status.aws.amazon.com/](http://status.aws.amazon.com/). If the CDN status is reported as healthy and operating normally, but you still have connection problems,
+then possible reasons may include:
+
+* Internet/network connectivity problems, DNS problems
+* Firewalls, antivirus or other security software, which incorrectly filters out the CDN scripts or modifies (breaks) them on-the-fly.
+* **Kendo UI internal builds are not uploaded on CDN**, because they are intended only for clients with a commercial license. Please use a private CDN with internal builds.
+* The scripts and stylesheets' URLs are different when using HTTPS - see above.
+
+Since we are unable to investigate connection problems remotely, please contact your system administrators if needed.
+
+When using any kind of CDN, it is recommended to implement a local fallback.
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Page Title</title>
+
+        <script src="http://cdn.kendostatic.com/2014.1.318/js/jquery.min.js"></script>
+        <script>
+            if (typeof jQuery == "undefined") {
+                // fallback to local jQuery
+                document.write(unescape('%3Cscript src="/path/to/local/jquery.min.js" type="text/javascript"%3E%3C/script%3E'));
+            }
+        </script>
+
+        <script src="http://cdn.kendostatic.com/2014.1.318/js/kendo.all.min.js"></script>
+        <script>
+            if (typeof kendo == "undefined") {
+                // checking for loaded CSS files is cumbersome,
+                // that's why we assume that if the scripts have failed, so have the stylesheets
+                
+                // fallback to local Kendo UI stylesheets
+                document.write(unescape('%3Clink rel="stylesheet" href="/path/to/local/kendo.common.min.css" %3C/%3E'));
+                document.write(unescape('%3Clink rel="stylesheet" href="/path/to/local/kendo.blueopal.min.css" %3C/%3E'));
+                
+                // fallback to local Kendo UI scripts
+                document.write(unescape('%3Cscript src="/path/to/local/kendo.all.min.js" type="text/javascript"%3E%3C/script%3E'));
+                // also add kendo.aspnetmvc.min.js or kendo.timezones.min.js, if needed
+            }
+        </script>
+    </head>
+
+More information is available at [Scott HanselMann - Fallback from CDN to Local Scripts](http://www.hanselman.com/blog/CDNsFailButYourScriptsDontHaveToFallbackFromCDNToLocalJQuery.aspx).
 
 ## jQuery version
 
