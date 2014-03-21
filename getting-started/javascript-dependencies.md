@@ -59,7 +59,8 @@ then possible reasons may include:
 
 * Internet/network connectivity problems, DNS problems
 * Firewalls, antivirus or other security software, which incorrectly filters out the CDN scripts or modifies (breaks) them on-the-fly.
-* **Kendo UI internal builds are not uploaded on CDN**, because they are intended only for clients with a commercial license. Please use a private CDN with internal builds.
+* **Kendo UI internal builds are not uploaded on CDN**, because they are intended only for clients with a commercial license. Only major releases and service packs are uploaded on the Kendo UI CDN.
+For internal builds, please use a private CDN.
 * The scripts and stylesheets' URLs are different when using HTTPS - see above.
 
 Since we are unable to investigate connection problems remotely, please contact your system administrators if needed.

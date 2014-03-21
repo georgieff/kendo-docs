@@ -47,9 +47,9 @@ The following JavaScript errors will be thrown (depending on the browser):
 #### Solution
 Make sure jQuery is not included more than once in your page. Remove any duplicate `script` references to jQuery. Include all [required Kendo JavaScript files](/kendo-ui/getting-started/javascript-dependencies).
 
-## Certain Kendo UI versions are not available on CDN
+## Scripts or stylesheets do not load from the Kendo UI CDN
 
-Kendo CDN is updated only when a new official version is released (major or service pack). Internal builds are not uploaded to CDN.
+Please refer to [Kendo UI CDN Fallback and Troubleshooting](/kendo-ui/getting-started/javascript-dependencies#cdn-fallback-and-troubleshooting).
 
 ## The widget object is undefined after loading a page through AJAX
 
