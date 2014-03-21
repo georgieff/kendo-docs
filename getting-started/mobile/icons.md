@@ -7,7 +7,7 @@ publish: true
 # Icons in Kendo UI Mobile
 
 > **Important:** Current WP8 versions do not support web fonts loaded from a local CSS when used in PhoneGap or HTML5 applications!
-Unfortunately there are no known workarounds yet. Use images for icons when targeting WP8 applications.
+Unfortunately there are no known workarounds yet. Use [images for icons](#custom_icons_in_wp8) when targeting WP8 applications.
 
 Kendo UI Mobile includes 34 integrated font icons, which can be used directly in a Kendo UI Mobile project by specifying a data-icon attribute with one of the following icon names
 (supported by all Button widgets and the ListView items):
@@ -298,6 +298,43 @@ Again if only several icons should be overridden, specify them with their classe
     <div data-role="tabstrip">
         <a href="#index" data-icon="favorites">Home</a>
     </div>
+
+## Custom icons in WP8
+
+Windows Phone 8.0 has some severe issues that may affect your icons usage. First of all, masks are not supported in any way (Firefox allows SVG mask usage, WebKit/Blink have image masks, although broken in Android.
+If you plan to only have a web app that runs in the browser, you can go for font icons as they look better across different resolutions and can be colorized.
+The default Kendo UI Mobile icons will work, as any icon font like Font Awesome. Learn more about using font icons and Font Awesome from [this excellent blog post](http://blogs.telerik.com/kendoui/posts/13-09-17/easy-custom-kendo-ui-mobile-icons-with-font-awesome).
+
+However, if you plan to create a hybrid app with PhoneGap or HTML5 template in WP8 SDK, font icons don't work there - the WebView [doesn't load them at all](http://stackoverflow.com/questions/14575208/using-css-font-face-in-a-phonegap-windows-phone-8-app).
+We provide image replacements for our default icons, but if you want custom ones, you are left out with only normal images/backgrounds and you need to provide one for normal and another for the selected state
+(if they differ). You should also think about the dark and light background themes in WP8, as Kendo UI Mobile automatically supports them in Cordova.
+
+### How we define WP8 app icon backgrounds in Kendo UI Mobile:
+
+    <style>
+        .km-on-wp.km-app .km-icon:after,
+        .km-on-wp.km-app .km-filter-wrap:before,
+        .km-on-wp.km-app .km-state-active .km-icon:after
+        {
+            background-image: url("images/wp8_icons.png");
+        }
+        .km-wp-light.km-app .km-icon:after,
+        .km-wp-light.km-app .km-filter-wrap:before
+        {
+            background-image: url("images/wp8_inverseicons.png");
+        }
+        .km-on-wp.km-app .km-action:after
+        {
+            background-position-x: 20%;
+        }
+        .km-on-wp.km-app .km-add:after
+        {
+            background-position-x: 22%;
+        }
+    </style>
+
+The sprite is laid out horizontally and we use background-size and background-position-x to specify the icon offsets. This is done to allow the icon to be resized with its container size.
+You don't need your icons to have circles around them, as they are defined in CSS just for the TabStrip.
 
 ## Additional icons in Kendo UI Mobile font
 
