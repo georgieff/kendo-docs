@@ -82,6 +82,7 @@ Defines the text of the labels that are shown within the editor. Used primarily 
         formatBlock: "Format",
         formatting: "Format",
         style: "Styles",
+        viewHtml: "View HTML",
         emptyFolder: "Empty Folder",
         uploadFile: "Upload",
         orderBy: "Arrange by:",
