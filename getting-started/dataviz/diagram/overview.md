@@ -21,7 +21,6 @@ publish: true
        $(document).ready(function() {
            $("#diagram").kendoDiagram();
        });
-    </p>
 
 This renders an empty diagramming surface and unless you look at the resulting HTML you won't see any changes on a visual level.
 
@@ -48,7 +47,7 @@ A more complete overview of the options can be found in the API documentation.
 
 The addShape() method also accepts a Shape instance, so you can also add a new shape as follows;
 
-	var Point = kendo.dataviz.diagram.Point;
+    var Point = kendo.dataviz.diagram.Point;
     var shapeInstance = new kendo.diagram.Shape();
     var shape = diagram.addShape(shape);
     shape.position(new Point(100,220));
@@ -57,7 +56,7 @@ The addShape() method also accepts a Shape instance, so you can also add a new s
 
 Shapes can be connected using the connect() method;
 
-	var Point = kendo.dataviz.diagram.Point;
+    var Point = kendo.dataviz.diagram.Point;
     var shape1 = diagram.addShape(new Point(100,100));
     var shape2 = diagram.addShape(new Point(300,100));
     var connection = diagram.connect(shape1, shape2);
@@ -119,7 +118,7 @@ There are various ways you can define and customize data binding and we'll only 
 
 which produces a tree diagram with the default rectangular shapes;
 
-![Simple data binding.](SimpleDatabinding.PNG)
+![Simple data binding.](simpleDatabinding.png)
 
 Alternatively, you can define the data binding through the setDataSource method;
 
@@ -154,7 +153,7 @@ If you need more flexibility you can fully control where and how data is display
         return g;
     };
 
-    var diagram = $("#canvas").kendoDiagram({
+    var diagram = $("#diagram").kendoDiagram({
         dataSource: [{
             "name": "Telerik",
             "items": [
@@ -169,4 +168,4 @@ If you need more flexibility you can fully control where and how data is display
 Note that the function returning a visual has a parameter containing the data item to be displayed.
 The result of this custom data binding would look something like this;
 
-![Custom data binding visuals.](GetVisual.PNG)
+![Custom data binding visuals.](visualTemplate.png)
