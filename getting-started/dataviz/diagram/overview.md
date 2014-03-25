@@ -73,15 +73,14 @@ Diagram layout consists in an automatic organization of a diagram on the basis h
 
 this will give a random diagram, something like the follwing;
 
-![A random diagram.](RandomDiagram.PNG)
+![A random diagram.](random-diagram.png)
 
 and upon calling the layout method
 
     diagram.layout();
 
 you will see a diagram similar to this:
-![Layout of a random diagram.](LayoutRandomDiagram.PNG)
-
+![Layout of a random diagram.](layout-random-diagram.png)
 
 The default layout algorithm is the top-down tree layout. You can change this to another type (and subtype) by inserting it in the layout options;
 
@@ -89,7 +88,7 @@ The default layout algorithm is the top-down tree layout. You can change this to
 
 which would give something like
 
-![Force directed layout.](ForceSample.PNG)
+![Force directed layout.](force-sample.png)
 
 Other layout types and options are discussed in the API.
 
@@ -118,7 +117,7 @@ There are various ways you can define and customize data binding and we'll only 
 
 which produces a tree diagram with the default rectangular shapes;
 
-![Simple data binding.](simpleDatabinding.png)
+![Simple data binding.](simple-databinding.png)
 
 Alternatively, you can define the data binding through the setDataSource method;
 
@@ -127,45 +126,50 @@ Alternatively, you can define the data binding through the setDataSource method;
 
 If you need more flexibility you can fully control where and how data is displayed by defining a visualTemplate option rather than the template option. This entails the creation of a function which returns a visual, usually a Group element containing other visuals bound to your data. For instance, the following snippet reproduces the same diagram but with ellipses rather than the previous rectangular shapes:
 
-    var getVisual = function(options) {
-        var dataviz = kendo.dataviz;
+    var visualTemplate = function(options) {
+      var dataviz = kendo.dataviz,
+          dataItem = options.dataItem;
 
-        var g = new dataviz.diagram.Group({
-            autoSize: true
-        });
+      var g = new dataviz.diagram.Group({
+        autoSize: true
+      });
 
-        var r = new dataviz.diagram.Circle({
-            width: 100,
-            height: 60,
-            background: "LimeGreen"
-        });
+      var r = new dataviz.diagram.Circle({
+        width: 100,
+        height: 60,
+        background: "LimeGreen"
+      });
 
-        g.append(r);
+      g.append(r);
 
-        var fn = new dataviz.diagram.TextBlock({
-            text: data.name,
-            fontSize: 16,
-            x: 30,
-            y: 30
-        });
+      var fn = new dataviz.diagram.TextBlock({
+        text: dataItem.name,
+        color: "#ffffff",
+        fontSize: 16,
+        x: 30,
+        y: 30
+      });
 
-        g.append(fn);
-        return g;
+      g.append(fn);
+      return g;
     };
 
     var diagram = $("#diagram").kendoDiagram({
-        dataSource: [{
-            "name": "Telerik",
-            "items": [
-                {"name": "Kendo"},
-                {"name": "Icenium"}
-            ]
-        }],
-        visualTemplate: getVisual
+      dataSource: [{
+        "name": "Telerik",
+        "items": [{
+          "name": "Kendo"
+        }, {
+          "name": "Icenium"
+        }]
+      }],
+      shapeDefaults: {
+        visual: visualTemplate
+      }
     }).data("kendoDiagram");
     diagram.layout();
 
 Note that the function returning a visual has a parameter containing the data item to be displayed.
 The result of this custom data binding would look something like this;
 
-![Custom data binding visuals.](visualTemplate.png)
+![Custom data binding visuals.](visual-template.png)
