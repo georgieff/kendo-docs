@@ -12,6 +12,9 @@ publish: true
 
 The Kendo ModalView is used to present self-contained functionality in the context of the current task.
 
+> **Important:** As of Q3 2013 the ModalView supports autosizing when its content changes and when no height is set. Unfortunately we were able to implement this at the expense of the possibility to set the ModalView
+size in a CSS stylesheet. As a workaround please use the ModalView width and height options or set them through inline CSS instead.
+
 ## Getting Started
 
 The Kendo mobile Application will automatically initialize a mobile ModalView widget for every `div` element with `role` data attribute set to `modalview` present in the **mobile application DOM element** (same level as the application views).
