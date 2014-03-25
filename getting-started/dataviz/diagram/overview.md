@@ -173,3 +173,4 @@ Note that the function returning a visual has a parameter containing the data it
 The result of this custom data binding would look something like this;
 
 ![Custom data binding visuals.](visual-template.png)
+
