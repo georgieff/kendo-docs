@@ -780,8 +780,8 @@ having at least one non locked column with width greater than twice the scrollba
     <script>
     $("#grid").kendoGrid({
       columns: [
-        { locked: true, field: "id" },
-        { field: "name" }
+        { locked: true, field: "id", width:200 },
+        { field: "name", width:200 }
       ],
       dataSource: [ { id: 1, name: "Jane Doe" }, { id: 2, name: "John Doe" } ]
     });
@@ -799,10 +799,10 @@ prevent the user from locking or unlocking this column using the user interface.
     <script>
     $("#grid").kendoGrid({
       columns: [
-        { locked: true, field: "id", lockable: false },
-        { locked: true, field: "age" },
-        { field: "name" },
-        { field: "city", lockable: false }
+        { locked: true, field: "id", lockable: false, width:250 },
+        { locked: true, field: "age", width:250 },
+        { field: "name", width:250 },
+        { field: "city", lockable: false, width:250 }
       ],
       dataSource: [
           { id: 1, name: "Jane Doe", age: 31, city: "Boston" },
