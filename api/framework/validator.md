@@ -15,7 +15,7 @@ publish: true
 
 The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the validation message.
 
-### Defining custom error template
+#### Defining custom error template
     <form id="myform">
         <input name="username" required /> <br />
         <button>Validate</button>
