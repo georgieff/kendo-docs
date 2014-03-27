@@ -126,17 +126,19 @@ Here is how to configure the Kendo MultiSelect to send parameters to the server:
                 .Filter(FilterType.Contains)
                 .DataSource(source =>
                 {
-                        source.Read(read =>
+                       source.Read(read =>
                        {
                                 read.Action("GetProducts", "Home")
                                     .Data("onAdditionalData");
                        });
+
+                       source.serverFiltering(true);
                 })
          %>
          <script>
             function onAdditionalData() {
                 return {
-                    text: $("#productMultiSelect").val()
+                    text: $("#productMultiSelect").data("kendoMultiSelect").input.val()
                 };
             }
         </script>
@@ -155,13 +157,14 @@ Here is how to configure the Kendo MultiSelect to send parameters to the server:
                       read.Action("GetProducts", "Home") //Set the Action and Controller name
                           .Data("onAdditionalData");
                  });
+                 source.ServerFiltering(true);
               })
         )
 
         <script>
             function onAdditionalData() {
                 return {
-                    text: $("#productMultiSelect").val()
+                    text: $("#productMultiSelect").data("kendoMultiSelect").input.val()
                 };
             }
         </script>
