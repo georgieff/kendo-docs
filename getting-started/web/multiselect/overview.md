@@ -271,6 +271,11 @@ You may want to scroll the widget automatically to the bottom when new items are
         });
     }
 
+## Support for label element
+
+Because of the complex rendering of the widget, focusing of the widget using label element will require additional implementation.
+Check [this jsFiddle demo](http://jsfiddle.net/krustev/6mHKF/), which shows how to achieve this.
+
 ## Accessing an Existing MultiSelect
 
 You can reference an existing **MultiSelect** instance via
