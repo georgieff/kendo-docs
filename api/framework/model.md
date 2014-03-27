@@ -10,7 +10,7 @@ publish: true
 # kendo.data.Model
 
 The `Model` inherits from the [ObservableObject](/kendo-ui/api/framework/observableobject) and extends it with the ability to define schema - fields and methods. The
-[DataSource](/kendo-ui/api/framework/datasource) contains instances of the `Model` when the [schema.model](/kendo-ui/api/framework/datasource#schema.model-object) setting is specified.
+[DataSource](/kendo-ui/api/framework/datasource) contains instances of the `Model` when the [schema.model](/kendo-ui/api/framework/datasource#configuration-schema.model) setting is specified.
 
 ## Configuration
 
