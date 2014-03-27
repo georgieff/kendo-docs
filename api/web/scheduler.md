@@ -841,7 +841,7 @@ The configuration of the scheduler messages. Use this option to customize or loc
 
 ### messages.allDay `String`
 
-The text similar to "all day" displayed in day/week views.
+The text similar to "all day" displayed in day,week and agenda views.
 
 #### Example - set the "allDay" scheduler message
 
