@@ -364,6 +364,8 @@ The same as `selectable: true`
 
 When multiple selection is enabled, it is possible to select multiple rows/cells by dragging the mouse cursor to select them similar to the way you would select a block of text.
 
+> Selection is not persisted when the Grid is rebound, i.e. when paging, filtering, sorting, editing or virtual scrolling occurs.
+
 ### Paging
 
 The paging setting within the grid is controlled by the `pageable` option. The grid will additionally need to know how many records to display on each page and the total number of records in the data set.  Specify the `pageSize` on the data source and the field in the dataset that will contain the total count of records.
