@@ -33,7 +33,7 @@ The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the
 Set of messages (either strings or functions) which will be shown when given validation rule fails.
 By setting already existing key the appropriate built-in message will be overridden.
 
-### Defining custom messages
+#### Defining custom messages
     <form id="myform">
         <input name="username" required /> <br />
         <input type="email" name="userEmail" required data-message="My custom email message" /> <br />
