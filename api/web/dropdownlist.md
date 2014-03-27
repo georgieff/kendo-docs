@@ -715,7 +715,7 @@ Opens the popup.
     });
 
     var dropdownlist = $("#dropdownlist").data("kendoDropDownList");
-    dropdownlist.focus();
+    dropdownlist.open();
     </script>
 
 ### enable

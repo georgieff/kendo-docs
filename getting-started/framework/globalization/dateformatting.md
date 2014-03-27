@@ -22,7 +22,7 @@ The purpose of date formatting is to convert Date object to a human readable str
 
 - *F* - Full date/time pattern ("dddd, MMMM dd, yyyy h:mm:ss tt" for en-US)
 
-    kendo.toString(new Date(2000, 10, 6), "D") -> Monday, November 06, 2000 12:00:00 AM
+    kendo.toString(new Date(2000, 10, 6), "F") -> Monday, November 06, 2000 12:00:00 AM
 
 - *g* - General date/time pattern (short time) ("M/d/yyyy h:mm tt" for en-US)
 
