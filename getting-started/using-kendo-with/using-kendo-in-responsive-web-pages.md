@@ -8,7 +8,7 @@ publish: true
 
 # Using Kendo with In Responsive Web Pages
 
-Most Kendo UI Widgets work and auto-resize when used in responsive web pages out of the box. Several widgets will need an additonal [kendo.resize](/kendo-ui/api/framework/kendo#methods-init) in case their dimensions are set to percentage values.
+Most Kendo UI Widgets work and auto-resize when used in responsive web pages out of the box. Several widgets will need an additonal [kendo.resize](/kendo-ui/api/framework/kendo#methods-resize) in case their dimensions are set to percentage values.
 
 ## Widgets that do not suppport auto resizing when container is resized: ##
 
