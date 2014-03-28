@@ -205,7 +205,7 @@ Omit specifying Name() or use the same Name() as the name of the property.
 ## Kendo UI wrappers do not work inside client templates
 
 This can happen if the wrapper is declared without ToClientTemplate(). For more information please refer to
-[Using Kendo UI MVC wrappers inside client templates](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/introduction#using-kendo-ui-mvc-wrappers-inside-client-templates-with-toclienttemplate())
+[Using Kendo UI MVC wrappers inside client templates](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/fundamentals#client-templates)
 
 ## Nesting Kendo UI wrappers produces a server-side exception when using the WebForms view engine
 
