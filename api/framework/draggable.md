@@ -271,6 +271,34 @@ The *draggable* will also be activated by pressing, holding and lifting the fing
       }
     </style>
 
+### ignore `Selector`
+
+Specifies child elements for which the drag will not be initialized. Useful if the draggable contains input elements.
+
+#### Example
+
+    <div id="container">
+        <input type="text" />
+        <div>Foo</div>
+    </div>
+
+    <script>
+      $("#container").kendoDraggable({
+        ignore: "input",
+        hint: function(element) {
+          return element.clone();
+        }
+      });
+    </script>
+    <style>
+        #container {
+            width: 50px;
+            height: 50px;
+            border: 2px solid green;
+            margin: 5px;
+        }
+    </style>
+
 ## Methods
 
 ### cancelHold
