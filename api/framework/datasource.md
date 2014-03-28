@@ -3748,6 +3748,14 @@ The event handler function context (available via the `this` keyword) will be se
 
 The data source instance which fired the event.
 
+##### e.action `string` *(optional)*
+
+String describing the action type (available for all actions other than "read"). Possible values are "itemchange", "add", "remove" and "sync".
+
+##### e.items `Array`
+
+The array of data items that were affected (or read).
+
 #### Example - subscribe to the "change" event during initialization
 
     <script>
