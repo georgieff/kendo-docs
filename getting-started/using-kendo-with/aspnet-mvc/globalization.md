@@ -42,7 +42,7 @@ The previous tutorial showed how to set the client-side Kendo UI culture. To set
 
     <system.web>
         <!-- snip --!>
-        <globalization uiculture="es-ES" culture="es-ES"></globalization>
+        <globalization uiCulture="es-ES" culture="es-ES"></globalization>
         <!-- snip --!>
     </system.web>
 
