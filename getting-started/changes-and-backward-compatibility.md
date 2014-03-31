@@ -16,6 +16,44 @@ publish: true
 
 * **Flat Theme**: Button background is now gray. The previous outcome can be achieved using **.k-primary** class.
 
+### Changes from 2013 Q3 SP1 (2013.3.1316)
+
+#### Breaking changes
+
+**DatePicker**: The DatePicker widget now uses a single calendar instance. The calendar will be created on first popup opening.
+
+If you need to get a reference to the calendar you will need to get in the [open](kendo-ui/api/web/datepicker#events-open) event handler:
+
+-Old:
+
+    var datepicker = $("#datepicker").kendoDatePicker();
+    var calendar = datepicker.dateView.calendar;
+
+-New:
+
+    $("#datepicker").kendoDatePicker({
+        open: function() {
+            var calendar = this.dateView.calendar;
+        }
+    });
+
+**DateTimePicker**: The DateTimePicker widget now uses a single calendar instance. The calendar will be created on first date popup opening.
+
+If you need to get a reference to the calendar you will need to get in the [open](kendo-ui/api/web/datetimepicker#events-open) event handler:
+
+-Old:
+
+    var datetimepicker = $("#datetimepicker").kendoDateTimePicker();
+    var calendar = datetimepicker.dateView.calendar;
+
+-New:
+
+    $("#datetimepicker").kendoDateTimePicker({
+        open: function() {
+            var calendar = this.dateView.calendar;
+        }
+    });
+
 ### Changes from 2013 Q3 (2013.3.1119)
 
 #### Breaking changes
