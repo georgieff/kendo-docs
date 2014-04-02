@@ -493,9 +493,17 @@ The following defines a custom shape with connectors adapted to the shape's outl
 
 ### shapeDefaults.rotation.angle `Number` *(default: 0)*
 
-### shapeDefaults.content `String`
+### shapeDefaults.content `Object`
 
-Sets the text content of the Shape.
+Defines the shapes content settings.
+
+### shapeDefaults.content.text `String`
+
+The text displayed in the shape.
+
+### shapeDefaults.content.align `String`
+
+The alignment of the text inside the shape.
 
 ### shapeDefaults.visual `Function`
 
