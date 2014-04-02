@@ -68,7 +68,7 @@ The following gradient options are available:
 
 *   roundedBevel - default
 
-![Pie Chart with roundBevel overlay](chart-pie-overlay-roundBevel.png)
+![Pie Chart with roundedBevel overlay](chart-pie-overlay-roundBevel.png)
 
 *   sharpBevel
 
