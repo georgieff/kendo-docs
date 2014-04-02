@@ -21,7 +21,7 @@ When an input element is disabled the end user cannot change its value (type in 
         <button data-bind="click: enableInput">Enable</button>
     </div>
     <script>
-    var viewModel = kendo.obsevable({
+    var viewModel = kendo.observable({
         isNameEnabled: false,
         name: "John Doe",
         enableInput: function() {
