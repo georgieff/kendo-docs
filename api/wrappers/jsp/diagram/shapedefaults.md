@@ -24,14 +24,6 @@ Defines the fill-color of the shape.
     <kendo:diagram-shapeDefaults background="background">
     </kendo:diagram-shapeDefaults>
 
-### content `java.lang.String`
-
-Sets the text content of the Shape.
-
-#### Example
-    <kendo:diagram-shapeDefaults content="content">
-    </kendo:diagram-shapeDefaults>
-
 ### editable `boolean`
 
 Specifies if the shape is editable by the user.
@@ -141,6 +133,18 @@ More documentation is available at [kendo:diagram-shapeDefaults-connectors](/ken
 
     <kendo:diagram-shapeDefaults>
         <kendo:diagram-shapeDefaults-connectors></kendo:diagram-shapeDefaults-connectors>
+    </kendo:diagram-shapeDefaults>
+
+### kendo:diagram-shapeDefaults-content
+
+Defines the shapes content settings.
+
+More documentation is available at [kendo:diagram-shapeDefaults-content](/kendo-ui/api/wrappers/jsp/diagram/shapedefaults-content).
+
+#### Example
+
+    <kendo:diagram-shapeDefaults>
+        <kendo:diagram-shapeDefaults-content></kendo:diagram-shapeDefaults-content>
     </kendo:diagram-shapeDefaults>
 
 ### kendo:diagram-shapeDefaults-hover

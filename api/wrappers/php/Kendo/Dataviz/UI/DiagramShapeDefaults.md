@@ -70,21 +70,32 @@ Adds one or more DiagramShapeDefaultsConnector to the DiagramShapeDefaults.
 
 ### content
 
-Sets the HTML content of the DiagramShapeDefaults.
+Defines the shapes content settings.
 
 #### Returns
+`\Kendo\Dataviz\UI\DiagramShapeDefaults`
 
-`DiagramShapeDefaults`
+#### Parameters
 
-#### $value `string`
+##### $value `\Kendo\Dataviz\UI\DiagramShapeDefaultsContent|array`
 
-#### Example
+
+#### Example - using [\Kendo\Dataviz\UI\DiagramShapeDefaultsContent](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/DiagramShapeDefaultsContent)
+    <?php
+    $shapeDefaults = new \Kendo\Dataviz\UI\DiagramShapeDefaults();
+    $content = new \Kendo\Dataviz\UI\DiagramShapeDefaultsContent();
+    $align = 'value';
+    $content->align($align);
+    $shapeDefaults->content($content);
+    ?>
+
+#### Example - using array
 
     <?php
     $shapeDefaults = new \Kendo\Dataviz\UI\DiagramShapeDefaults();
-    $shapeDefaults->content('<strong>Content</strong>');
+    $align = 'value';
+    $shapeDefaults->content(array('align' => $align));
     ?>
-
 
 ### editable
 Specifies if the shape is editable by the user.

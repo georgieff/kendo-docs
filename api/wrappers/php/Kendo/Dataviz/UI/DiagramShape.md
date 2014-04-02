@@ -70,21 +70,32 @@ Adds one or more DiagramShapeConnector to the DiagramShape.
 
 ### content
 
-Sets the HTML content of the DiagramShape.
+Defines the shapes content settings.
 
 #### Returns
+`\Kendo\Dataviz\UI\DiagramShape`
 
-`DiagramShape`
+#### Parameters
 
-#### $value `string`
+##### $value `\Kendo\Dataviz\UI\DiagramShapeContent|array`
 
-#### Example
+
+#### Example - using [\Kendo\Dataviz\UI\DiagramShapeContent](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/DiagramShapeContent)
+    <?php
+    $shape = new \Kendo\Dataviz\UI\DiagramShape();
+    $content = new \Kendo\Dataviz\UI\DiagramShapeContent();
+    $align = 'value';
+    $content->align($align);
+    $shape->content($content);
+    ?>
+
+#### Example - using array
 
     <?php
     $shape = new \Kendo\Dataviz\UI\DiagramShape();
-    $shape->content('<strong>Content</strong>');
+    $align = 'value';
+    $shape->content(array('align' => $align));
     ?>
-
 
 ### editable
 Specifies if the shape is editable by the user.
