@@ -9676,6 +9676,10 @@ Date instance
 
 #### Event Data
 
+##### e.axis `Object`
+
+The target axis configuration.
+
 ##### e.from `Object`
 
 The lower boundary of the selected range.
@@ -9701,6 +9705,10 @@ Date instance
 
 #### Event Data
 
+##### e.axis `Object`
+
+The target axis configuration.
+
 ##### e.from `Object`
 
 The lower boundary of the selected range.
@@ -9723,6 +9731,10 @@ Category index (0-based)
 Date instance
 
 #### Event Data
+
+##### e.axis `Object`
+
+The target axis configuration.
 
 ##### e.from `Object`
 

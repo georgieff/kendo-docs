@@ -29696,6 +29696,10 @@ The event handler function context (available via the `this` keyword) will be se
 
 #### Event Data
 
+##### e.axis `Object`
+
+The target axis configuration.
+
 ##### e.from `Object`
 
 The lower boundary of the selected range.
@@ -29766,6 +29770,10 @@ The event handler function context (available via the `this` keyword) will be se
 
 #### Event Data
 
+##### e.axis `Object`
+
+The target axis configuration.
+
 ##### e.from `Object`
 
 The lower boundary of the selected range.
@@ -29779,10 +29787,6 @@ The widget instance which fired the event.
 The upper boundary of the selected range.
 
 The last selected category is at index [to - 1] unless the axis is justified. In this case it is at index [to].
-
-##### e.axis `Object`
-
-The target axis configuration.
 
 #### Example - subscribe to the "selectEnd" event during initialization
     <div id="chart"></div>
@@ -29840,6 +29844,10 @@ The event handler function context (available via the `this` keyword) will be se
 
 #### Event Data
 
+##### e.axis `Object`
+
+The target axis configuration.
+
 ##### e.from `Object`
 
 The lower boundary of the selected range.
@@ -29853,10 +29861,6 @@ The widget instance which fired the event.
 The upper boundary of the selected range.
 
 The last selected category is at index [to - 1] unless the axis is justified. In this case it is at index [to].
-
-##### e.axis `Object`
-
-The target axis configuration.
 
 #### Example - subscribe to the "selectStart" event during initialization
     <div id="chart"></div>
