@@ -15,6 +15,8 @@ publish: true
 #### Breaking changes
 
 * **Flat Theme**: Button background is now gray. The previous outcome can be achieved using **.k-primary** class.
+* **Kendo UI Web mobile skins**: The new skins for the mobile widgets in Kendo UI Web are **not compatible** with the Kendo UI Mobile platform themes and shouldn't be used together. However,
+you can style your app with them if you don't include any of the Kendo UI Mobile styling (even the common CSS) - **kendo.[skin-name].mobile.min.css** includes everything needed.
 
 ### Changes from 2013 Q3 SP1 (2013.3.1316)
 
@@ -58,7 +60,8 @@ If you need to get a reference to the calendar you will need to get in the [open
 
 #### Breaking changes
 
-* **Supporting libs**: Kendo UI LESS fork is now updated to LESS 1.6.0. Kendo UI CSS files are built with it (no breaking changes in the LESS files themselves).
+* **Supporting libs**: Kendo UI LESS fork is now updated to LESS 1.6.0. Kendo UI CSS files are built with it (no breaking changes in the LESS files themselves, except that they rely on
+the new default import once functionality of @import directive).
 
 ## Kendo UI 2013 Q3
 

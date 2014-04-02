@@ -13,6 +13,12 @@ This is a collection of frequently asked questions about how Kendo UI Mobile wor
 
 ## All platforms
 
+### Q: Can I use the Kendo UI Web mobile widget skins from Q1 2014 with Kendo UI Mobile platform themes.
+
+A: _**No. They are incompatible.**_ The reason for this is that Kendo UI Web skins don't have skin names as a class selector and their styling is affecting everything in your page/app. They will also partially
+override the existing Kendo UI Mobile platform themes. You can use them in Kendo UI Mobile only, if you don't use the Kendo UI Mobile platform themes at all, including the common CSS -
+the Web skins already have everything needed.
+
 ### Q: My icons are missing, replaced with strange symbols and my iOS back button doesn't look okay. What am I missing?
 
 A: Kendo UI Mobile stylesheets need the **images** subfolder to load the icon font and the back button mask. Please copy them over with your stylesheet(s).
