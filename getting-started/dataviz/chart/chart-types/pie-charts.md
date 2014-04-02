@@ -66,7 +66,7 @@ Each segment has a transparent effect overlay that adds depth to the two-dimensi
 
 The following gradient options are available:
 
-*   roundBevel - default
+*   roundedBevel - default
 
 ![Pie Chart with roundBevel overlay](chart-pie-overlay-roundBevel.png)
 
