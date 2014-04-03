@@ -63,7 +63,7 @@ Shapes can be connected using the connect() method;
 
 which results in something like the picture below
 
-![Two shapes connected.](connection.png)
+![Two shapes connected.](diagram-connection.png)
 
 ### Layout
 
