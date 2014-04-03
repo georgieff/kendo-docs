@@ -1243,7 +1243,7 @@ Executes an editor command on the currently selected text.
 
 ##### name `String`
 
-The name of the command to be executed.
+The name of the command to be executed. The available names match the list of [tools](#configuration-tools), plus `"undo"` and `"redo"`.
 
 ##### params `String|Object` *(optional)*
 
