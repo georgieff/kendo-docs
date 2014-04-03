@@ -71,24 +71,19 @@ Diagram layout consists in an automatic organization of a diagram on the basis h
 
     diagram.randomDiagram();
 
-this will give a random diagram, something like the follwing;
-
-![A random diagram.](random-diagram.png)
+this will give a random diagram, something like the follwing:
 
 and upon calling the layout method
 
     diagram.layout();
 
 you will see a diagram similar to this:
-![Layout of a random diagram.](layout-random-diagram.png)
 
 The default layout algorithm is the top-down tree layout. You can change this to another type (and subtype) by inserting it in the layout options;
 
     diagram.layout({ type: "ForceDirected" });
 
 which would give something like
-
-![Force directed layout.](force-sample.png)
 
 Other layout types and options are discussed in the API.
 
@@ -115,9 +110,7 @@ There are various ways you can define and customize data binding and we'll only 
     }).data("kendoDiagram");
     diagram.layout();
 
-which produces a tree diagram with the default rectangular shapes;
-
-![Simple data binding.](simple-databinding.png)
+which produces a tree diagram with the default rectangular shapes:
 
 Alternatively, you can define the data binding through the setDataSource method;
 
@@ -170,7 +163,5 @@ If you need more flexibility you can fully control where and how data is display
     diagram.layout();
 
 Note that the function returning a visual has a parameter containing the data item to be displayed.
-The result of this custom data binding would look something like this;
-
-![Custom data binding visuals.](visual-template.png)
+The result of this custom data binding would look something like this:
 
