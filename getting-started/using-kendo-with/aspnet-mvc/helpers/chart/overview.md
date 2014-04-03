@@ -98,7 +98,7 @@ You can subscribe to all [events](/kendo-ui/api/dataviz/chart#events) exposed by
         function internetUsersChart_dataBound() {
             // Handle the dataBound event
         }
-	    
+
         function internetUsersChart_seriesClick() {
             // Handle the series click event
         }
@@ -119,7 +119,7 @@ You can subscribe to all [events](/kendo-ui/api/dataviz/chart#events) exposed by
         function internetUsersChart_dataBound() {
             // Handle the dataBound event
         }
-	    
+
         function internetUsersChart_seriesClick() {
             // Handle the seriesClick event
         }
