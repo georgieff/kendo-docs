@@ -4782,6 +4782,10 @@ Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 The width of the border.
 
+### panes.clip `Boolean`
+
+Specifies whether the charts in the pane should be clipped.
+
 ### panes.height `Number`
 
 The pane height in pixels.

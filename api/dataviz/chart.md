@@ -6288,6 +6288,33 @@ The width of the border in pixels. By default the border width is set to zero wh
     });
     </script>
 
+### panes.clip `Boolean`
+
+Specifies whether the charts in the pane should be clipped. By default all charts except radar, polar and 100% stacked charts are clipped.
+
+#### Example - set the chart pane clip option
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      seriesDefaults: {
+        type: "line"
+      },
+      series: [
+        { data: [1, 100, 1] },
+        { data: [1, 100, 1], axis: "bottom" }
+      ],
+      valueAxis: [
+        { pane: "top-pane", max: 70 },
+        { pane: "bottom-pane", name: "bottom", max: 70 }
+      ],
+      panes: [
+        { name: "top-pane" },
+        { name: "bottom-pane", clip: false}
+      ]
+    });
+    </script>
+
 ### panes.height `Number`
 
 The chart pane height in pixels.
