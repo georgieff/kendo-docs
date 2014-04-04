@@ -550,6 +550,10 @@ Any valid CSS color string will work here, including hex and rgb.
 
 The default color for the ranges.
 
+### scale.rangeSize `Number`
+
+The width of the range indicators.
+
 ### scale.reverse `Boolean`*(default: false)*
 
 Reverses the axis direction - values increase from right to left and from top to bottom.
