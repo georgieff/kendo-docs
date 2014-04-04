@@ -8,6 +8,16 @@ publish: true
 
 This represents an invisible, grouping element with visual children. Groups can be nested to form a hierarchy.
 
+## Configuration
+
+### x `Number`
+
+The X position of the top-left corner of the group.
+
+### y `Number`
+
+The Y position of the top-left corner of the group.
+
 ## Methods
 
 ### append
