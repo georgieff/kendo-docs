@@ -24,28 +24,28 @@ publish: true
 
 This renders an empty diagramming surface and unless you look at the resulting HTML you won't see any changes on a visual level.
 
-The actual diagramming API can be accessed by calling the data() method;
+The actual diagramming API can be accessed by calling the data() method:
 
      var diagram = $("#diagram").kendoDiagram().data("kendoDiagram");
 
 ### Adding shapes
 
-To add a rectangular shape to the diagram you simply call the addShape() method;
+To add a rectangular shape to the diagram you simply call the addShape() method:
 
     diagram.addShape();
 
-which will render a rectangle in the upper-left corner of the diagram surface. To have a different initial position you would call the addShape() method with an additional Point parameter, for example;
+which will render a rectangle in the upper-left corner of the diagram surface. To have a different initial position you would call the addShape() method with an additional Point parameter, for example:
 
     var Point = kendo.dataviz.diagram.Point;
     diagram.addShape(new Point(100,220));
 
-Additional properties can be specified via the options parameter. For instance, you can set the background color of the shape like so;
+Additional properties can be specified via the options parameter. For instance, you can set the background color of the shape like so.
 
     diagram.addShape(new Point(100,220), { background: "red" });
 
 A more complete overview of the options can be found in the API documentation.
 
-The addShape() method also accepts a Shape instance, so you can also add a new shape as follows;
+The addShape() method also accepts a Shape instance, so you can also add a new shape as follows:
 
     var Point = kendo.dataviz.diagram.Point;
     var shapeInstance = new kendo.diagram.Shape();
@@ -54,7 +54,7 @@ The addShape() method also accepts a Shape instance, so you can also add a new s
 
 ### Adding connections
 
-Shapes can be connected using the connect() method;
+Shapes can be connected using the connect() method:
 
     var Point = kendo.dataviz.diagram.Point;
     var shape1 = diagram.addShape(new Point(100,100));
