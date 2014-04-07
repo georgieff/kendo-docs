@@ -237,6 +237,24 @@ The default color for the ranges.
     $scale->rangePlaceholderColor('value');
     ?>
 
+### rangeSize
+The width of the range indicators.
+
+#### Returns
+`\Kendo\Dataviz\UI\LinearGaugeScale`
+
+#### Parameters
+
+##### $value `float`
+
+
+
+#### Example 
+    <?php
+    $scale = new \Kendo\Dataviz\UI\LinearGaugeScale();
+    $scale->rangeSize(1);
+    ?>
+
 ### addRange
 
 Adds one or more LinearGaugeScaleRange to the LinearGaugeScale.

@@ -65,6 +65,14 @@ The default color for the ranges.
     <kendo:linearGauge-scale rangePlaceholderColor="rangePlaceholderColor">
     </kendo:linearGauge-scale>
 
+### rangeSize `float`
+
+The width of the range indicators.
+
+#### Example
+    <kendo:linearGauge-scale rangeSize="rangeSize">
+    </kendo:linearGauge-scale>
+
 ### reverse `boolean`
 
 Reverses the axis direction - values increase from right to left and from top to bottom.
