@@ -1626,6 +1626,35 @@ The text similar to "Never" displayed in the scheduler recurrence editor.
     });
     </script>
 
+### messages.recurrenceEditor.end.mobileLabel `String`
+
+The text similar to "Ends" displayed in the adaptive version of the scheduler recurrence editor.
+
+#### Example - set the "mobileLabel" scheduler recurrence editor message
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      mobile: true,
+      messages: {
+        recurrenceEditor: {
+            end: {
+                mobileLabel: "ends: "
+            }
+        }
+      },
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    </script>
+
 ### messages.recurrenceEditor.end.on `String`
 
 The text similar to "On " displayed in the scheduler recurrence editor.
