@@ -320,6 +320,13 @@ needed, it can be removed with CSS like this:
 
 Using the `#GridID` will allow the styles to be applied to a particular Grid instance only. In order to apply the above styles to all Grid instances, you can replace the ID with the `.k-grid` CSS class.
 
+### Frozen Columns (Locked Columns)
+
+The Grid supports frozen (locked) columns on one side of the table. The locking feature requires enabled [scrolling](#scrolling).
+All columns should have an explicit width set. The total width of all locked columns should be equal to or less than the Grid width minus three times the scrollbar width.
+This requirement ensures that at least one non-locked column is always visible and horizontal scrolling of the non-locked columns is possible
+(the horizontal scrollbar will not appear if there is not enough horizontal space for it). Row template and detail features are not supported in combination with column locking.
+
 ### Selection
 
 Selection can be enabled in the grid simply by setting the `selectable` option to `true`.

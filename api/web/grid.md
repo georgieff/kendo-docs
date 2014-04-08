@@ -769,11 +769,7 @@ If set to `true` the column will not be displayed in the grid. By default all co
 
 ### columns.locked `Boolean` *(default: false)*
 
-If set to `true` the column will be displayed as locked in the grid.
-
-> Locking feature is supported only when scrolling is enabled. All of the columns should have width set,
-having at least one non locked column with width greater than twice the scrollbar width.
-> Row template and detail features are not supported in combination with column locking.
+If set to `true` the column will be displayed as locked in the grid. Also see [Frozen columns](/kendo-ui/getting-started/web/grid/walkthrough#frozen-columns-locked-colums).
 
 #### Example - locked columns
     <div id="grid"></div>
