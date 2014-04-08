@@ -769,7 +769,9 @@ If set to `true` the column will not be displayed in the grid. By default all co
 
 ### columns.locked `Boolean` *(default: false)*
 
-If set to `true` the column will be displayed as locked in the grid. Also see [Frozen columns](/kendo-ui/getting-started/web/grid/walkthrough#frozen-columns-locked-colums).
+[frozen-columns-url]: /kendo-ui/getting-started/web/grid/walkthrough#frozen-columns-(locked-colums)
+
+If set to `true` the column will be displayed as locked in the grid. Also see [Frozen Columns][frozen-columns-url].
 
 #### Example - locked columns
     <div id="grid"></div>
