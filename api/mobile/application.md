@@ -168,17 +168,17 @@ Disables the default behavior of Kendo UI Mobile apps to be web app capable (ope
     new kendo.mobile.Application($(document.body), { webAppCapable: false });
     </script>
 
-##### pushState `Boolean` *(default: false)*
+### pushState `Boolean` *(default: false)*
 
 If set to true, the application router instance will use the [history pushState API](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Manipulating_the_browser_history#The_pushState().C2.A0method).
 
 > The history pushState API currently has [limited support accross current browsers](http://caniuse.com/#search=pushstate).
 
-##### root `String` *(default: "/")*
+### root `String` *(default: "/")*
 
 Applicable if `pushState` is used and the application is deployed to a path different than `/`. If the application start page is hosted on `http://foo.com/myapp/`, the root option should be set to `/myapp/`.
 
-##### options.hashBang `Boolean` *(default: false)*
+### hashBang `Boolean` *(default: false)*
 
 Introduced in the 2014 Q1 Service Pack 1 release. If set to `true`, the navigation will parse and prefix the url fragment value with `!`,
 which [should be SEO friendly](http://googlewebmastercentral.blogspot.com/2009/10/proposal-for-making-ajax-crawlable.html).
