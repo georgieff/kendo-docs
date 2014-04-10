@@ -48,7 +48,7 @@ Placeholder is the element which indicates where the dragged item will be placed
     </ul>
     
     <script>
-        $("#sortable").kendoSortable({ 
+        $("#sortable").kendoSortable({
             placeholder: function(element) {
                 return element.clone().css({
                     "opacity": 0.3,
@@ -149,6 +149,26 @@ The **disabled** option specifies which items inside the Sortable's element cann
 
         $("#btnDisable").click(function() {
             $("#sortable").children().addClass("disabled");
+        });
+    </script>
+
+## Ignore elements
+
+A common problem that developers encounter is that input elements that are children of a sortable item cannot be focused with the mouse. The ignore option provides solution for this.
+
+> **Important** The `ignore` option is available in the latest internal build! This feature is **not** included in Q1 2014 (v2014.1.318).
+
+### Example - Sortable widget with focus-able input elements
+
+    <ul id="sortable">
+        <li>ItemA1 <input type="text" /></li>
+        <li>ItemA2 <input type="text" /></li>
+        <li>ItemA3 <input type="text" /></li>
+    </ul>
+
+    <script>
+        $("#sortable").kendoSortable({ 
+            ignore: "input"
         });
     </script>
 
