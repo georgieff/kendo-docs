@@ -35,6 +35,6 @@ so the Kendo UI Mobile platform CSS (even the common styling) should **not** be 
 
 - As a mobile application instance is missing, its features (declarative widget initialization, view transitions, browser history binding, etc.) will not work.
 - Unlike the application mode, this mode primary targets mobile web sites - thus the mobile OS skins (Android/iOS) are not supported.
-- Certain listview features (pull to refresh, endless scrolling, press to load more, fixed headers) rely on the mobile scroller; the listview widget should be instantiated in a mobile drawer widget element.
-- The drawer widget should have its [container configuration option](/api/mobile/drawer/#configuration-container) set. The drawer will not close automatically when navigation is performed.
+- Certain listview features (pull to refresh, endless scrolling, press to load more, fixed headers) rely on the mobile scroller; the listview widget should be instantiated in a mobile scroller widget element.
+- The drawer widget should have its [container configuration option](/kendo-ui/api/mobile/drawer/#configuration-container) set. The drawer will not close automatically when navigation is performed.
 
