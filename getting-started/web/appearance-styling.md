@@ -28,6 +28,7 @@ Commonly-used CSS classes include:
 *   **k-button** - applied to elements that should look like push buttons. The class sets a text color, background color, background image and hover styling. This is the **recommended **class for styling **form buttons**
 *   **k-input** - applied to textboxes inside input widgets like ComboBox and AutoComplete to set border, text and background color
 *   **k-textbox** - same as k-input, but used for standalone (generic) input elements that are not part of widget. This is the **recommended **class for styling user** form input elements** as it provides the same look, height and vertical alignment as the Kendo UI input widgets
+*   **k-checkbox** - applied to checkboxes inside the treeview widget, when checkboxes are enabled for it.
 *   **k-group** and **k-content** - applied to various containers to set a background and border color
 *   **k-popup** - applied to popup containers that are detached from their opener component and are placed in the `body` element
 *   **k-icon** and **k-sprite** - applied to elements that display part of a sprite image as background to init their dimensions
