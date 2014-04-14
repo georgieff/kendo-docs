@@ -18,8 +18,8 @@ Kendo UI Templates use a simple templating syntax we call "hash templates." With
 
 There are three ways to use the hash syntax:
 
-1. Render literal values: #= #
-2. Render HTML-encoded values: #: #
+1. Render values as HTML: #= #
+2. Uses HTML encoding to display values: #: #
 3. Execute arbitrary JavaScript code: # if(...){# ... #}#
 
 > If your template includes a "#" that is not part of a binding expression, **you must** escape that value or it will cause a template compliation error (this is common in Kendo UI Mobile where # is often used for view navigation). You can escape any literal "#" in JavaScript strings using "\\\\#" and in HTML script templates using "\\#".
@@ -55,7 +55,17 @@ Now, when the template is consumed, assuming there are HTML characters in the da
             var template = kendo.template("<div id='box'>#: firstName #</div>");
             var data = { firstName: "<b>Todd</b>" }; //Data with HTML tags
             var result = template(data); //Pass the data to the compiled template
-            $("#example").html(result); //display the resulting encoded HTML Output (<b>Todd</b>)
+            $("#example").html(result); // display the following string result ("<b>Todd</b>")
+        </script>
+
+If the HTML encoding is not used the output will be:
+        
+        <div id="example"></div>
+        <script>
+            var template = kendo.template("<div id='box'>#= firstName #</div>");
+            var data = { firstName: "<b>Todd</b>" }; //Data with HTML tags
+            var result = template(data); //Pass the data to the compiled template
+            $("#example").html(result); //display "Todd" in a bold font weight 
         </script>
 
 > HTML encoding is useful when you want to avoid rendering HTML tags in your templates. It will escape the HTML tags in your data and render the tags as a string. You should use HTML encoding when working with data from unknown sources (such as user submitted values) in case users have included HTML markup in the content that could break the layout of your page.
