@@ -709,6 +709,7 @@ The fields which can be used in the template are:
         group: { field: "age", aggregates: [ { field: "age", aggregate: "count" }] }
       }
     });
+    </script>
 
 ### columns.headerAttributes `Object`
 
