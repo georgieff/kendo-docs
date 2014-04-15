@@ -178,6 +178,42 @@ For additional information check the [columnHide](/kendo-ui/api/web/grid#events-
     $grid->columnHide(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
+### columnLock
+Fired when the user lock a column.The event handler function context (available via the this keyword) will be set to the widget instance.
+For additional information check the [columnLock](/kendo-ui/api/web/grid#events-columnLock) event documentation.
+
+#### Returns
+`\Kendo\UI\Grid`
+
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
+
+#### Example - using string which defines a JavaScript function
+
+    <?php
+    $grid = new \Kendo\UI\Grid('Grid');
+    $grid->columnLock('function(e) { }');
+    ?>
+
+#### Example - using string which defines a JavaScript name
+    <script>
+        function onColumnLock(e) {
+            // handle the columnLock event.
+        }
+    </script>
+    <?php
+    $grid = new \Kendo\UI\Grid('Grid');
+    $grid->columnLock('onColumnLock');
+    ?>
+
+#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
+
+    <?php
+    $grid = new \Kendo\UI\Grid('Grid');
+    $grid->columnLock(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
+
 ### columnMenu
 
 If set to true the grid will display the column menu when the user clicks the chevron icon in the column headers. The column menu allows the user to show and hide columns, filter and sort (if filtering and sorting are enabled).
@@ -377,6 +413,42 @@ For additional information check the [columnShow](/kendo-ui/api/web/grid#events-
     <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->columnShow(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
+
+### columnUnlock
+Fired when the user unlock a column.The event handler function context (available via the this keyword) will be set to the widget instance.
+For additional information check the [columnUnlock](/kendo-ui/api/web/grid#events-columnUnlock) event documentation.
+
+#### Returns
+`\Kendo\UI\Grid`
+
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
+
+#### Example - using string which defines a JavaScript function
+
+    <?php
+    $grid = new \Kendo\UI\Grid('Grid');
+    $grid->columnUnlock('function(e) { }');
+    ?>
+
+#### Example - using string which defines a JavaScript name
+    <script>
+        function onColumnUnlock(e) {
+            // handle the columnUnlock event.
+        }
+    </script>
+    <?php
+    $grid = new \Kendo\UI\Grid('Grid');
+    $grid->columnUnlock('onColumnUnlock');
+    ?>
+
+#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
+
+    <?php
+    $grid = new \Kendo\UI\Grid('Grid');
+    $grid->columnUnlock(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
 ### addColumn
