@@ -545,6 +545,38 @@ For additional information check the [saveChanges](/kendo-ui/api/web/grid#events
         }
     </script>
 
+### columnLock `String`
+
+Fired when the user lock a column.The event handler function context (available via the this keyword) will be set to the widget instance.
+
+
+For additional information check the [columnLock](/kendo-ui/api/web/grid#events-columnLock) event documentation.
+
+#### Example
+    <kendo:grid columnLock="handle_columnLock">
+    </kendo:grid>
+    <script>
+        function handle_columnLock(e) {
+            // Code to handle the columnLock event.
+        }
+    </script>
+
+### columnUnlock `String`
+
+Fired when the user unlock a column.The event handler function context (available via the this keyword) will be set to the widget instance.
+
+
+For additional information check the [columnUnlock](/kendo-ui/api/web/grid#events-columnUnlock) event documentation.
+
+#### Example
+    <kendo:grid columnUnlock="handle_columnUnlock">
+    </kendo:grid>
+    <script>
+        function handle_columnUnlock(e) {
+            // Code to handle the columnUnlock event.
+        }
+    </script>
+
 ## Event Tags
 
 ### kendo:grid-cancel
@@ -851,5 +883,41 @@ For additional information check the [saveChanges](/kendo-ui/api/web/grid#events
                 }
             </script>
         </kendo:grid-saveChanges>
+    </kendo:grid>
+
+### kendo:grid-columnLock
+
+Fired when the user lock a column.The event handler function context (available via the this keyword) will be set to the widget instance.
+
+
+For additional information check the [columnLock](/kendo-ui/api/web/grid#events-columnLock) event documentation.
+
+#### Example
+    <kendo:grid>
+        <kendo:grid-columnLock>
+            <script>
+                function(e) {
+                    // Code to handle the columnLock event.
+                }
+            </script>
+        </kendo:grid-columnLock>
+    </kendo:grid>
+
+### kendo:grid-columnUnlock
+
+Fired when the user unlock a column.The event handler function context (available via the this keyword) will be set to the widget instance.
+
+
+For additional information check the [columnUnlock](/kendo-ui/api/web/grid#events-columnUnlock) event documentation.
+
+#### Example
+    <kendo:grid>
+        <kendo:grid-columnUnlock>
+            <script>
+                function(e) {
+                    // Code to handle the columnUnlock event.
+                }
+            </script>
+        </kendo:grid-columnUnlock>
     </kendo:grid>
 
