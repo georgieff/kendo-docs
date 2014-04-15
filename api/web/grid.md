@@ -6312,3 +6312,123 @@ The widget instance which fired the event.
     var grid = $("#grid").data("kendoGrid");
     grid.bind("saveChanges", grid_saveChanges);
     </script>
+
+### columnLock
+
+Fired when the user lock a column.
+
+The event handler function context (available via the `this` keyword) will be set to the widget instance.
+
+#### Event Data
+
+##### e.column `Object`
+
+A JavaScript object which represents the [column](#configuration-columns) configuration.
+
+##### e.sender `kendo.ui.Grid`
+
+The widget instance which fired the event.
+
+#### Example - subscribe to the "columnLock" event during initialization
+
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+      columns: [
+        { field: "id", width: 100, locked: true },
+        { field: "name", width: 100 },
+        { field: "age", width: 50 }
+      ],
+      dataSource: [
+        { name: "Jane Doe", age: 30, id: 1 },
+        { name: "John Doe", age: 33, id: 2 }
+      ],
+      columnMenu: true,
+      columnLock: function(e) {
+        console.log(e.column.field); // displays the field of the just locked column
+      }
+    });
+    </script>
+
+#### Example - subscribe to the "columnLock" event after initialization
+
+    <div id="grid"></div>
+    <script>
+    function grid_columnLock(e) {
+      console.log(e.column.field); // displays the field of the just locked column
+    }
+    $("#grid").kendoGrid({
+      columns: [
+        { field: "id", width: 100, locked: true },
+        { field: "name", width: 100 },
+        { field: "age", width: 50 }
+      ],
+      dataSource: [
+        { name: "Jane Doe", age: 30, id: 1 },
+        { name: "John Doe", age: 33, id: 2 }
+      ],
+      columnMenu: true
+    });
+    var grid = $("#grid").data("kendoGrid");
+    grid.bind("columnLock", grid_columnLock);
+    </script>
+
+### columnUnlock
+
+Fired when the user unlock a column.
+
+The event handler function context (available via the `this` keyword) will be set to the widget instance.
+
+#### Event Data
+
+##### e.column `Object`
+
+A JavaScript object which represents the [column](#configuration-columns) configuration.
+
+##### e.sender `kendo.ui.Grid`
+
+The widget instance which fired the event.
+
+#### Example - subscribe to the "columnUnlock" event during initialization
+
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+      columns: [
+        { field: "id", width: 100, locked: true },
+        { field: "name", width: 100 },
+        { field: "age", width: 50 }
+      ],
+      dataSource: [
+        { name: "Jane Doe", age: 30, id: 1 },
+        { name: "John Doe", age: 33, id: 2 }
+      ],
+      columnMenu: true,
+      columnUnlock: function(e) {
+        console.log(e.column.field); // displays the field of the just unlocked column
+      }
+    });
+    </script>
+
+#### Example - subscribe to the "columnUnlock" event after initialization
+
+    <div id="grid"></div>
+    <script>
+    function grid_columnUnlock(e) {
+      console.log(e.column.field); // displays the field of the just unlocked column
+    }
+    $("#grid").kendoGrid({
+      columns: [
+        { field: "id", width: 100, locked: true },
+        { field: "name", width: 100 },
+        { field: "age", width: 50 }
+      ],
+      dataSource: [
+        { name: "Jane Doe", age: 30, id: 1 },
+        { name: "John Doe", age: 33, id: 2 }
+      ],
+      columnMenu: true
+    });
+    var grid = $("#grid").data("kendoGrid");
+    grid.bind("columnUnlock", grid_columnUnlock);
+    </script>
