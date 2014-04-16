@@ -793,7 +793,7 @@ If set to `true` the column will be displayed as locked in the grid. Also see [F
 If set to `false` the column will remain in the side of the grid into which its own locked configuration placed it.
 
 > This option is meaningful when the grid has columns which are configured with a [locked](#configuration-columns.locked) value. Setting it explicitly to `false` will
-prevent the user from locking or unlocking this column using the user interface.
+prevent the user from locking or unlocking this column using the user interface. Row template and detail features are not supported in combination with column locking.
 
 #### Example - lockable columns
     <div id="grid"></div>
