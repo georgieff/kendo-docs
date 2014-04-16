@@ -1,6 +1,6 @@
 ---
 title: Authoring Maps
-meta_title: Creating maps for the Map widget in Kendo UI DataViz
+meta_title: Authoring maps for the Map widget in Kendo UI DataViz
 meta_description: How to process and transform maps from external sources to use with the Map widget.
 slug: gs-dataviz-map-authoring-maps
 relatedDocs: gs-dataviz-map-layers
@@ -17,20 +17,21 @@ This is how the finished map should look like:
 
 ## Finding Data
 
-The first step is obtaining the raw vector data.
+The first step is locating a map dataset that matches our requirements.
+
+The [U.S. Census Bureau](http://www.census.gov) and [Ordnance Survey](http://www.ordnancesurvey.co.uk/)
+are popular official sources for map data.
 
 For this tutorial we'll use data from the [Natural Earth project](http://www.naturalearthdata.com/).
-It offers different data themes in three levels of detail - 1:10m, 1:50m and 1:110m.
-
 Natural Earth datasets are in the public domain. The project is supported by [NACIS](http://nacis.org/).
+
+It offers different data themes in three levels of detail - 1:10m, 1:50m and 1:110m.
 
 We'll use the [Admin 1 – States, provinces](http://www.naturalearthdata.com/downloads/50m-cultural-vectors)
 data set. A scale of 1:50 000 000 provides good detail/size balance on a country level.
 
-The dataset is available for download in Esri Shapefile format:
-[ne_50m_admin_1_states_provinces_lakes.zip](http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/cultural/ne_50m_admin_1_states_provinces_lakes.zip)
-
-> Official authorities are also a good place to look for data. See the [U.S. Census Bureau](http://www.census.gov) and [Ordnance Survey](http://www.ordnancesurvey.co.uk/)
+The dataset is available for download in
+[Esri Shapefile format](http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/cultural/ne_50m_admin_1_states_provinces_lakes.zip)
 
 ## Exploring Data
 
@@ -115,4 +116,3 @@ The map can definitely benefit from some color. Let's define a palette and apply
 The *provnum_ne* field goes from 1 to 9 denoting each mainland state and territory.
 We use the [shapeCreated](/kendo-ui/api/dataviz/map#events-shapeCreated) event to set the fill color of the newly created shape.
 
-This concludes the tutorial.
