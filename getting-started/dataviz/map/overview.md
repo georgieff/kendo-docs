@@ -1,6 +1,6 @@
 ---
 title: Overview
-meta_title: Documentation for Map widget in Kendo UI DataViz
+meta_title: Overview of the Map widget in Kendo UI DataViz
 meta_description: How to create a map, create and bind layers, explore the quick overview of Map widget major features.
 slug: gs-dataviz-map-overview
 relatedDocs: api-dataviz-map, gs-dataviz-map-layers
