@@ -11,8 +11,8 @@ publish: true
 
 We'll illustrate the process of creating a map from scratch, using freely available datasets.
 The goal for this tutorial is a map of the Australian states and mainland territories.
-This is how the finished map should look like:
 
+This is how the finished map should look like:
 ![Finished map](images/map-au.png)
 
 ## Finding Data
@@ -56,6 +56,7 @@ Included in it is the [ogr2ogr](http://www.gdal.org/ogr2ogr.html) command-line t
 It's nothing less than a "Swiss Army knife" for vector files.
 
 The following command will convert the dataset to GeoJSON and will filter it out in one go:
+
     ogr2ogr -f GeoJSON -where "iso_a2 = 'AU'" au-states.json ne_50m_admin_1_states_provinces_lakes.shp
 
 Our dataset is now ready and we can display it.
