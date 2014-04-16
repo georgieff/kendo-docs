@@ -72,6 +72,9 @@ Optional namespace too look in when instantiating Kendo UI widgets. The valid na
 
 Instantiates Kendo UI widgets in a given DOM element based on role data attributes.
 
+> **Important:** Kendo UI Mobile is not included in the default list of initialized namespaces. You can initialize it explicitly by
+  running `kendo.init(element, kendo.mobile.ui);`
+
 #### Example
      <div id="view">
         <div>
