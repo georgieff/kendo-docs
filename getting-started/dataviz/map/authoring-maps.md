@@ -43,7 +43,7 @@ With the help of the [Identify tool](http://www.qgis.org/en/docs/user_manual/int
 
 ![Identify results](images/map-qgis-identify.png)
 
-We can narrow down our interest to features with [ISO A2 country code](http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) "AU".
+We can narrow down our interest to features with "AU" [ISO 3166-1 alpha-2](http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) country code.
 
 ## Processing Data
 
