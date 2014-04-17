@@ -4017,7 +4017,7 @@ This class can be used to obtain reference to the button after Grid initializati
 
 ### toolbar.template `String|Function`
 
-The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the command. Be default renders a button.
+The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the command. By default renders a button.
 
 #### Example - set the template as a function
 
