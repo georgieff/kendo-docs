@@ -45,6 +45,10 @@ For example:
 
     http://cdn.kendostatic.com/2014.1.318/js/kendo.all.min.js
     http://cdn.kendostatic.com/2014.1.318/styles/kendo.common.min.css
+    
+To access the combined minified javascript for Kendo UI Core (available since Q1 2014 SP1), use the following url:
+
+    http://cdn.kendostatic.com/2014.1.416/js/kendo.ui.core.min.js
 
 > **Important:** in order to use HTTPS, you need to directly access the CloudFront CDN
 
