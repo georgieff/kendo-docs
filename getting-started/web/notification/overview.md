@@ -192,8 +192,6 @@ but you will still be able to use the shorthand show methods, as demonstrated be
                     template: "<div class='myAlert'>System alert generated at #= time # : #= myMessage #</div>"
                     // template content can also be defined separately
                     //template: $("#myAlertTemplate").html()
-                    // which is equivalent to
-                    //templateId: "myAlertTemplate"
             }]
         });
         

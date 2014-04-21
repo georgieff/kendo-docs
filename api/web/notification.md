@@ -287,8 +287,6 @@ Describes the HTML markup of the different notification types as Kendo UI templa
                     template: "<div class='myAlert'>System alert generated at #= time # : #= myMessage #</div>"
                     // template content can also be defined separately
                     //template: $("#myAlertTemplate").html()
-                    // which is equivalent to
-                    //templateId: "myAlertTemplate"
             }]
         });
         
@@ -315,7 +313,7 @@ See the [example above](#configuration-templates).
 
 ### templates.template `String` *(default: "")*
 
-Defines a Kendo UI template to be used with the corresponding notification type. **Either `templates.template` or `templates.templateId` must be set.**
+Defines a Kendo UI template to be used with the corresponding notification type.
 
 See the [example above](#configuration-templates).
 
