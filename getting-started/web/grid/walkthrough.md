@@ -159,7 +159,8 @@ For older versions, the following Javascript code must be used instead, which pr
 ### Initializing the Grid inside a hidden container
 
 If a scrollable Grid with a set height is initialized while inside a hidden container, the Grid will not be able to adjust its vertical layout correctly,
-because Javascript size calculations do not work for elements with a `display:none` style. The widget will appear smaller than expected. If virtual scrolling is used, the vertical scrollbar will not appear.
+because Javascript size calculations do not work for elements with a `display:none` style. Depending on the exact configuration, the widget will appear smaller than expected or the scrollable data area will overflow.
+If virtual scrolling is used, the vertical scrollbar will not appear.
 
 If virtual scrolling is **not used**, there are several options:
 
