@@ -8,7 +8,7 @@ publish: true
 
 The Visual Studio Extensions options dialog provides settings allowing you to configure the Telerik UI for ASP.NET MVC Visual Studio Extensions to best suit your needs.
 
-It can be accessed through **Visual Studio | Telerik | VSExtensions Options…**
+It can be accessed via the **Telerik | VSExtensions Options** menu item.
 
 ![Options menu](images/options_menu.png)
 
@@ -24,11 +24,11 @@ The settings under the General category affect all of the installed **Telerik Vi
 
 ###Project Upgrade Notifications for Detected Local Distributions
 
-- **Suggest project upgrades for Telerik product version available on my computer** – When enabled, you will be prompted to upgrade upon opening a project, which is not using the latest version of Telerik products installed on your system.
-- **Suggest upgrades when an equal Dev release detected on projects using a Trial** – When enabled, you will be prompted to upgrade if a licensed version is available on your system,  but the current project uses a trial version.
+- **Suggest project upgrades for Telerik product version available on my computer** - When enabled, you will be prompted to upgrade upon opening a project, which is not using the latest version of Telerik products installed on your system.
+- **Suggest upgrades when an equal Dev release detected on projects using a Trial** - When enabled, you will be prompted to upgrade if a licensed version is available on your system,  but the current project uses a trial version.
 
 ###Other Notifications
-- **Notify me when a Telerik subscription I have is about to expire** – When enabled, you will receive reminders if any of your subscriptions expire within the next month.
+- **Notify me when a Telerik subscription I have is about to expire** - When enabled, you will receive reminders if any of your subscriptions expire within the next month.
 
 >**Note:**
 You can benefit subscription reminders only if you have saved your credentials in the Latest Version Acquirer tool.
@@ -46,7 +46,7 @@ All settings under the KendoUI category affect only the Telerik UI for ASP.NET M
 
 ###Latest version retrieval
 
-- **Include internal builds in Latest Version update and retrieval** – When enabled, the Latest Version Acquirer tool will retrieve internal builds as well as official releases when checking for a new version.
+- **Include internal builds in Latest Version update and retrieval** - When enabled, the Latest Version Acquirer tool will retrieve internal builds as well as official releases when checking for a new version.
 
 ###Notifications
 

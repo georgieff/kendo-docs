@@ -13,7 +13,7 @@ The Upgrade Wizard has two main purposes:
 - Check and retrieve the latest available Telerik UI for ASP.NET MVC  release
 - Change the version of Telerik UI for ASP.NET MVC in the projects in the solution use.
 
-The Upgrade Wizard can be launched from **Visual Studio | Telerik | Telerik UI for ASP.NET MVC | Upgrade Wizard**
+The Upgrade Wizard can be launched from the **Telerik | UI for ASP.NET MVC | Upgrade Wizard** menu item.
 
 ![Choose projects](images/upgrade_menu.png)
 
@@ -23,11 +23,11 @@ The Upgrade Wizard can be launched from **Visual Studio | Telerik | Telerik UI f
 
 The page allows you to configure the following options:
 
-- **Version** - Select from all versions that have been previously installed or downloaded using the VS Extensions
-- **Add referenced assemblies to solution** - Choose whether to copy referenced assemblies to your solution folder. The assemblies will automatically get added to source control when using Microsoft Team Foundation Server
-- **Download** – Launch the Latest Version Acquirer tool
-- **Browse** - Browse to a location where the new version is manually downloaded and extracted
-- **Choose Projects** - Choose which projects will be updated (it is recommended to keep all Telerik projects the same version)
+- **Version** - Select from all versions that have been previously installed or downloaded using the VS Extensions.
+- **Add referenced assemblies to solution** - Choose whether to copy referenced assemblies to your solution folder. The assemblies will automatically get added to source control when using Microsoft Team Foundation Server.
+- **Download** - Launch the Latest Version Acquirer tool.
+- **Browse** - Browse to a location where the new version is manually downloaded and extracted.
+- **Choose Projects** - Choose which projects will be updated (it is recommended to keep all Telerik projects the same version).
 
 > **Note:**
 The distribution, downloaded by the Upgrade Wizard contains only the "hotfix" files, e.g. the bare bone files, needed for a project to run correctly. It does not contain the documentation or the demo project.

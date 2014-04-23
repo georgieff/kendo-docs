@@ -6,7 +6,7 @@ publish: true
 
 #Automatic Latest Version Retrieval
 
-With the Telerik UI for ASP.NET MVC** Visual Studio Extensions you keep your projects in an up-to-date state. The Latest Version Acquirer tool automatically retrieves the latest **Telerik UI for ASP.NET MVC** distribution available on the Telerik website. Running the **Upgrade Wizard** as a next step makes the task of latest **Telerik UI for ASP.NET MVC version utilization extremely easy.
+With the **Telerik UI for ASP.NET MVC** Visual Studio Extensions you keep your projects in an up-to-date state. The Latest Version Acquirer tool automatically retrieves the latest **Telerik UI for ASP.NET MVC** distribution available on the Telerik website.
 
 Once a day, upon Visual Studio launch, the extensions query the Telerik website for a new version of Telerik UI for ASP.NET MVC. A notification gets displayed when a new version is discovered:
 
@@ -20,7 +20,7 @@ Clicking the **Get Now** button starts the Latest Version Acquirer tool, prompti
 ![Get latest version](images/lva1.png)
 
 >**Important:**
-You cannot use the tool if you only have a Trial License (attempt to download a distribution would result in an error message if you don’t have a Dev License).
+You cannot use the tool if you have a trial license. Attempt to download a distribution would result in an error message.
 
 You can check the additional information about the release by clicking the Release Notes link. This will start a browser, navigated to a page with the release notes related to the specific version.
 

@@ -8,7 +8,7 @@ publish: true
 
 This help topic shows how to configure a Telerik UI for ASP.NET MVC Application.
 
-**Visual Studio | Telerik | Telerik UI for ASP.NET MVC | Configure Project** opens the Project Configuration Wizard.
+The **Telerik | UI for ASP.NET MVC | Configure Project** menu item opens the **Project Configuration Wizard**.
 
 ![Configure Project](images/configure.png)
 
