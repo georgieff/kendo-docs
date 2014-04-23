@@ -24,6 +24,10 @@ Download the latest version of `angular-kendo.js` from the Github repository: [h
 
 Don't forget to load the Kendo UI stylesheets too.
 
+Next, when creating your AngularJS application you must declare dependency on "kendo.directives":
+
+    var app = angular.module("your-angular-app", [ "kendo.directives" ]);
+
 ### Creating widgets the Angular way
 
 The directives kick in on attributes like `kendo-widget-name`.  For example to get a `DatePicker` widget, you'd write the following:
