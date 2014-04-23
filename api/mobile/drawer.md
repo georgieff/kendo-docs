@@ -18,7 +18,7 @@ Represents the Kendo UI Mobile Drawer widget. Inherits from [kendo.mobile.ui.Vie
 
 Specifies the content element to shift when the drawer appears. Required if the drawer is used outside of a mobile application.
 
-### Drawer outside of a mobile application
+#### Drawer outside of a mobile application
     <div id="drawer">
         <h3>Sports</h3>
         <a href="#" data-target="baseball" class="drawer-link active">Baseball</a>
