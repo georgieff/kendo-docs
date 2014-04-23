@@ -533,8 +533,9 @@ Now the email address is an interactive hyperlink  that will open a new email me
 
 The following example shows how to inject the Grid HTML output in a new browser window and trigger printing.
 
-> When the Grid is scrollable (by default), it renders a separate table for the header area.
-Since the browser cannot understand the relationship between the two Grid tables, it will not repeat the header row on top of every printed page. If this is a requirement, please [disable Grid scrolling](#scrolling).
+When the Grid is scrollable (by default, except for the MVC wrapper), it renders a [separate table for the header area](#scrolling).
+Since the browser cannot understand the relationship between the two Grid tables, it will not repeat the header row on top of every printed page.
+The code below addresses this issue by cloning the header row and prepending it to the printable Grid. Another option is to [disable Grid scrolling](#scrolling).
 
 **HTML**
 
@@ -546,61 +547,85 @@ Since the browser cannot understand the relationship between the two Grid tables
 
 **Javascript**
 
-    function printGrid() {
-        var gridElement = $("#grid"),
-            win = window.open('', '', 'width=800, height=500'),
-            doc = win.document.open(),
-            htmlStart =
-                '<!DOCTYPE html>' +
-                '<html>' +
-                '<head>' +
-                '<meta charset="utf-8" />' +
-                '<title>Kendo UI Grid</title>' +
-                '<link href="http://cdn.kendostatic.com/' + kendo.version + '/styles/kendo.common.min.css" rel="stylesheet" /> '+
-                '<style>' +
-                'html { font: 11pt sans-serif; }' +
-                '.k-grid, .k-grid-content { height: auto !important; }' +
-                '.k-grid-toolbar, .k-grid-pager > .k-link { display: none; }' +
-                '</style>' +
-                '</head>' +
-                '<body>',
-            htmlEnd =
-                '</body>' +
-                '</html>';
+	function printGrid() {
+		var gridElement = $('#grid'),
+			printableContent = '',
+			win = window.open('', '', 'width=800, height=500'),
+			doc = win.document.open();
 
-        doc.write(htmlStart + gridElement.clone()[0].outerHTML + htmlEnd);
-        doc.close();
-        win.print();
-    }
+		var htmlStart =
+				'<!DOCTYPE html>' +
+				'<html>' +
+				'<head>' +
+				'<meta charset="utf-8" />' +
+				'<title>Kendo UI Grid</title>' +
+				'<link href="http://cdn.kendostatic.com/' + kendo.version + '/styles/kendo.common.min.css" rel="stylesheet" /> ' +
+				'<style>' +
+				'html { font: 11pt sans-serif; }' +
+				'.k-grid { border-top-width: 0; }' +
+				'.k-grid, .k-grid-content { height: auto !important; }' +
+				'.k-grid .k-grid-header th { border-top: 1px solid; }' +
+				'.k-grid-toolbar, .k-grid-pager > .k-link { display: none; }' +
+				'</style>' +
+				'</head>' +
+				'<body>';
 
-    $(document).ready(function() {
-        var grid = $("#grid").kendoGrid({
-            dataSource: {
-                type: "odata",
-                transport: {
-                    read: "http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products"
-                },
-                pageSize: 20,
-                serverPaging: true,
-                serverSorting: true,
-                serverFiltering: true
-            },
-            toolbar: kendo.template($("#toolbar-template").html()),
-            height: 400,
-            pageable: true,
-            columns: [
-                { field: "ProductID", title: "Product ID", width: 100 },
-                { field: "ProductName", title: "Product Name" },
-                { field: "UnitPrice", title: "Unit Price", width: 100 },
-                { field: "QuantityPerUnit", title: "Quantity Per Unit" }
-            ]
-        });
+		var htmlEnd =
+				'</body>' +
+				'</html>';
 
-        $("#printGrid").click(function(){
-            printGrid();
-        });
+		var gridHeader = gridElement.children('.k-grid-header');
+		if (gridHeader[0]) {
+			var thead = gridHeader.find('thead').clone().addClass('k-grid-header');
+			printableContent = gridElement
+				.clone()
+					.children('.k-grid-header').remove()
+				.end()
+					.children('.k-grid-content')
+						.find('table')
+							.first()
+								.children('tbody').before(thead)
+							.end()
+						.end()
+					.end()
+				.end()[0].outerHTML;
+		} else {
+			printableContent = gridElement.clone()[0].outerHTML;
+		}
 
-    });
+		doc.write(htmlStart + printableContent + htmlEnd);
+		doc.close();
+		win.print();
+	}
+
+	$(document).ready(function () {
+		var grid = $('#grid').kendoGrid({
+			dataSource: {
+				type: 'odata',
+				transport: {
+					read: "http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products"
+				},
+				pageSize: 20,
+				serverPaging: true,
+				serverSorting: true,
+				serverFiltering: true
+			},
+			toolbar: kendo.template($('#toolbar-template').html()),
+			height: 400,
+			pageable: true,
+			columns: [
+				{ field: 'ProductID', title: 'Product ID', width: 100 },
+				{ field: 'ProductName', title: 'Product Name' },
+				{ field: 'UnitPrice', title: 'Unit Price', width: 100 },
+				{ field: 'QuantityPerUnit', title: 'Quantity Per Unit' }
+			]
+		});
+
+		$('#printGrid').click(function () {
+			printGrid();
+		});
+
+	});
 
 ## Adding a custom row when no records are loaded
 
