@@ -12,8 +12,8 @@ publish: true
 
 The Kendo UI Mobile **Application** provides the necessary tools for building native-looking web based mobile applications.
 
-> **Important:** Kendo UI Mobile Application init takes care of adding a Viewport meta tag to your app, in order to set the correct options it needs to function properly. Adding more Viewport meta tags
-or at least the **width** and **height** options is not advised as it may introduce unwanted behavior.
+> **Important:** Kendo UI Mobile Application init takes care of adding a Viewport meta tag to your app, in order to set the correct options it needs to function properly. Additional Viewport meta tags
+or at least the **width** and **height** options are not supported and may result in unexpected behavior.
 
 ## Getting Started
 
