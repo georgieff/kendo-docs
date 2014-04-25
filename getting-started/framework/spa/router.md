@@ -56,7 +56,7 @@ The parsed parts of the URL are passed as parameters to the route callback.
     <script>
         var router = new kendo.Router();
 
-        router.route("/items(/kendo-ui/:category)(/kendo-ui/:id)", function(category, id) {
+        router.route("/items(/:category)(/:id)", function(category, id) {
             console.log(category, "item with", id, " was requested");
         });
 
